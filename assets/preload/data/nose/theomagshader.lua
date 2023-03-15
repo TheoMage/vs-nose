@@ -1,5 +1,6 @@
 hola = 0
 sumar = 0
+restar = 0
 empezar = false
 
 terminar = false
@@ -34,6 +35,7 @@ function onEvent(n,v1,v2)
             empezar = true
             terminar = false
         elseif v1 == 'false' then
+            restar = v2
             empezar = false
             terminar = true
         elseif v1 == 'stop' then
@@ -50,7 +52,8 @@ function onUpdate()
     end
 
     if terminar then
-        hola = hola - 0.025
+        hola = hola - restar
+        setShaderFloat('theomagshader', 'distort', hola)
         if hola <= 0 then
             terminar = false
         end
