@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_start.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="start normal0000" x="5" y="5" width="179" height="61"/>
+	<SubTexture name="start normal0001" x="5" y="5" width="179" height="61"/>
+	<SubTexture name="start normal0002" x="189" y="5" width="179" height="61"/>
+	<SubTexture name="start normal0003" x="189" y="5" width="179" height="61"/>
+	<SubTexture name="start normal0004" x="5" y="71" width="179" height="61"/>
+	<SubTexture name="start normal0005" x="5" y="71" width="179" height="61"/>
+	<SubTexture name="start selected0000" x="189" y="71" width="181" height="63"/>
+	<SubTexture name="start selected0001" x="5" y="139" width="181" height="63"/>
+	<SubTexture name="start selected0002" x="191" y="139" width="181" height="63"/>
+</TextureAtlas>
