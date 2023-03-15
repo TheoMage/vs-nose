@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-107,
 				-199
 			],
-			"loop": false,
-			"anim": "singLEFT",
 			"fps": 24,
-			"name": "nose left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "nose left"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-104,
 				-274
 			],
-			"loop": false,
-			"anim": "singDOWN",
 			"fps": 24,
-			"name": "nose down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "nose down"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-174,
 				-127
 			],
-			"loop": false,
-			"anim": "singUP",
 			"fps": 24,
-			"name": "nose up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "nose up"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-153,
 				-185
 			],
-			"loop": false,
-			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "nose right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "nose right"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-130,
 				-190
 			],
-			"loop": false,
-			"anim": "idle",
 			"fps": 24,
-			"name": "nose idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "nose idle"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-147,
 				446
 			],
-			"loop": false,
-			"anim": "recomiendo",
 			"fps": 24,
-			"name": "deberias",
-			"indices": []
+			"anim": "recomiendo",
+			"indices": [],
+			"name": "deberias"
 		}
 	],
 	"no_antialiasing": false,
@@ -76,9 +76,9 @@
 	"healthicon": "nose",
 	"flip_x": false,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		255,
+		255,
+		255
 	],
 	"camera_position": [
 		-240,

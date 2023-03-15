@@ -54,6 +54,17 @@
 			"anim": "idle",
 			"indices": [],
 			"name": "nosebf idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-62,
+				-135
+			],
+			"fps": 24,
+			"anim": "start",
+			"indices": [],
+			"name": "nosebf start"
 		}
 	],
 	"no_antialiasing": false,
@@ -65,9 +76,9 @@
 	"healthicon": "nosebf",
 	"flip_x": true,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		255,
+		255,
+		255
 	],
 	"camera_position": [
 		-330,

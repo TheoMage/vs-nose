@@ -12,24 +12,51 @@
 	<SubTexture name="nosebf idle0003" x="1183" y="0" width="306" height="529" frameX="-21" frameY="-18" frameWidth="327" frameHeight="547"/>
 	<SubTexture name="nosebf idle0004" x="1489" y="0" width="297" height="534" frameX="-22" frameY="-13" frameWidth="327" frameHeight="547"/>
 	<SubTexture name="nosebf idle0005" x="1489" y="0" width="297" height="534" frameX="-22" frameY="-13" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0006" x="0" y="534" width="307" height="541" frameX="-9" frameY="-6" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0007" x="0" y="534" width="307" height="541" frameX="-9" frameY="-6" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0008" x="307" y="534" width="311" height="544" frameX="-4" frameY="-3" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0009" x="307" y="534" width="311" height="544" frameX="-4" frameY="-3" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0010" x="618" y="534" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0011" x="618" y="534" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0012" x="933" y="534" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf idle0013" x="933" y="534" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
-	<SubTexture name="nosebf left0000" x="1248" y="534" width="347" height="513" pivotX="0" pivotY="0" frameX="0" frameY="0" frameWidth="349" frameHeight="513"/>
-	<SubTexture name="nosebf left0001" x="1248" y="534" width="347" height="513" frameX="0" frameY="0" frameWidth="349" frameHeight="513"/>
-	<SubTexture name="nosebf left0002" x="1595" y="534" width="339" height="513" frameX="-10" frameY="0" frameWidth="349" frameHeight="513"/>
-	<SubTexture name="nosebf left0003" x="1595" y="534" width="339" height="513" frameX="-10" frameY="0" frameWidth="349" frameHeight="513"/>
-	<SubTexture name="nosebf right0000" x="0" y="1081" width="421" height="491" pivotX="12.1" pivotY="0.05" frameX="-12" frameY="0" frameWidth="433" frameHeight="491"/>
-	<SubTexture name="nosebf right0001" x="0" y="1081" width="421" height="491" frameX="-12" frameY="0" frameWidth="433" frameHeight="491"/>
-	<SubTexture name="nosebf right0002" x="421" y="1081" width="422" height="491" frameX="0" frameY="0" frameWidth="433" frameHeight="491"/>
-	<SubTexture name="nosebf right0003" x="421" y="1081" width="422" height="491" frameX="0" frameY="0" frameWidth="433" frameHeight="491"/>
-	<SubTexture name="nosebf up0000" x="843" y="1081" width="306" height="600" pivotX="4.75" pivotY="0" frameX="-4" frameY="0" frameWidth="314" frameHeight="600"/>
-	<SubTexture name="nosebf up0001" x="843" y="1081" width="306" height="600" frameX="-4" frameY="0" frameWidth="314" frameHeight="600"/>
-	<SubTexture name="nosebf up0002" x="1149" y="1081" width="314" height="584" frameX="0" frameY="-16" frameWidth="314" frameHeight="600"/>
-	<SubTexture name="nosebf up0003" x="1149" y="1081" width="314" height="584" frameX="0" frameY="-16" frameWidth="314" frameHeight="600"/>
+	<SubTexture name="nosebf idle0006" x="1786" y="0" width="307" height="541" frameX="-9" frameY="-6" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0007" x="1786" y="0" width="307" height="541" frameX="-9" frameY="-6" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0008" x="2093" y="0" width="311" height="544" frameX="-4" frameY="-3" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0009" x="2093" y="0" width="311" height="544" frameX="-4" frameY="-3" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0010" x="2404" y="0" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0011" x="2404" y="0" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0012" x="2719" y="0" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf idle0013" x="2719" y="0" width="315" height="547" frameX="0" frameY="0" frameWidth="327" frameHeight="547"/>
+	<SubTexture name="nosebf left0000" x="3034" y="0" width="347" height="513" pivotX="0" pivotY="0" frameX="0" frameY="0" frameWidth="349" frameHeight="513"/>
+	<SubTexture name="nosebf left0001" x="3034" y="0" width="347" height="513" frameX="0" frameY="0" frameWidth="349" frameHeight="513"/>
+	<SubTexture name="nosebf left0002" x="3381" y="0" width="339" height="513" frameX="-10" frameY="0" frameWidth="349" frameHeight="513"/>
+	<SubTexture name="nosebf left0003" x="3381" y="0" width="339" height="513" frameX="-10" frameY="0" frameWidth="349" frameHeight="513"/>
+	<SubTexture name="nosebf right0000" x="0" y="547" width="421" height="491" pivotX="12.1" pivotY="0.05" frameX="-12" frameY="0" frameWidth="433" frameHeight="491"/>
+	<SubTexture name="nosebf right0001" x="0" y="547" width="421" height="491" frameX="-12" frameY="0" frameWidth="433" frameHeight="491"/>
+	<SubTexture name="nosebf right0002" x="421" y="547" width="422" height="491" frameX="0" frameY="0" frameWidth="433" frameHeight="491"/>
+	<SubTexture name="nosebf right0003" x="421" y="547" width="422" height="491" frameX="0" frameY="0" frameWidth="433" frameHeight="491"/>
+	<SubTexture name="nosebf start0000" x="843" y="547" width="315" height="547" pivotX="65.2" pivotY="61.2" frameX="-57" frameY="-57" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0001" x="843" y="547" width="315" height="547" frameX="-57" frameY="-57" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0002" x="1158" y="547" width="313" height="521" frameX="-46" frameY="-60" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0003" x="1471" y="547" width="305" height="446" frameX="-63" frameY="-120" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0004" x="1776" y="547" width="275" height="342" frameX="-68" frameY="-140" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0005" x="2051" y="547" width="250" height="419" frameX="-78" frameY="0" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0006" x="2301" y="547" width="309" height="349" frameX="-57" frameY="-87" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0007" x="2610" y="547" width="309" height="344" frameX="-57" frameY="-87" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0008" x="2919" y="547" width="284" height="346" frameX="-66" frameY="-85" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0009" x="3203" y="547" width="284" height="342" frameX="-66" frameY="-85" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0010" x="3487" y="547" width="284" height="341" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0011" x="3771" y="547" width="284" height="345" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0012" x="3771" y="547" width="284" height="345" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0013" x="3487" y="547" width="284" height="341" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0014" x="0" y="1094" width="284" height="340" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0015" x="284" y="1094" width="284" height="345" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0016" x="284" y="1094" width="284" height="345" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0017" x="568" y="1094" width="284" height="341" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0018" x="852" y="1094" width="284" height="367" frameX="-66" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0019" x="1136" y="1094" width="304" height="380" frameX="-53" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0020" x="1440" y="1094" width="299" height="417" frameX="-51" frameY="-86" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0021" x="1739" y="1094" width="400" height="552" frameX="0" frameY="-59" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0022" x="2139" y="1094" width="389" height="577" frameX="-23" frameY="-45" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0023" x="2528" y="1094" width="354" height="571" frameX="-29" frameY="-47" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0024" x="2882" y="1094" width="327" height="569" frameX="-54" frameY="-49" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0025" x="3209" y="1094" width="327" height="561" frameX="-54" frameY="-53" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf start0026" x="3209" y="1094" width="327" height="561" frameX="-54" frameY="-53" frameWidth="412" frameHeight="622"/>
+	<SubTexture name="nosebf up0000" x="3536" y="1094" width="306" height="600" pivotX="4.75" pivotY="0" frameX="-4" frameY="0" frameWidth="314" frameHeight="600"/>
+	<SubTexture name="nosebf up0001" x="3536" y="1094" width="306" height="600" frameX="-4" frameY="0" frameWidth="314" frameHeight="600"/>
+	<SubTexture name="nosebf up0002" x="0" y="1694" width="314" height="584" frameX="0" frameY="-16" frameWidth="314" frameHeight="600"/>
+	<SubTexture name="nosebf up0003" x="0" y="1694" width="314" height="584" frameX="0" frameY="-16" frameWidth="314" frameHeight="600"/>
 </TextureAtlas>
