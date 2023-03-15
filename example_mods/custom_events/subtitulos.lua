@@ -2,6 +2,7 @@ function onCreate()
     makeLuaText('nose', '', 0, 0, 550)
     setTextSize('nose', 32)
     setProperty('nose.alpha', 0)
+    setObjectCamera('nose', 'camOther')
     addLuaText('nose')
 end
 
