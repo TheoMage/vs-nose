@@ -5,7 +5,7 @@ function onCreate()
     addLuaSprite('bar')
     setProperty('bar.visible', false)
 
-    makeLuaSprite('lentes', 'nose/lentes', 0, 360)
+    makeLuaSprite('lentes', 'nose/lentes', 0, 580)
     setObjectOrder('lentes', getObjectOrder('iconP2') + 1)
     setObjectCamera('lentes', 'camHUD')
     setProperty('lentes.alpha', 0)
