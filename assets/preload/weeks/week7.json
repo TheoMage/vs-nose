@@ -1,48 +1,32 @@
 {
 	"songs": [
 		[
-			"Ugh",
-			"tankman",
+			"nose",
+			"dad",
 			[
-				246,
-				182,
-				4
-			]
-		],
-		[
-			"Guns",
-			"tankman",
-			[
-				246,
-				182,
-				4
-			]
-		],
-		[
-			"Stress",
-			"tankman",
-			[
-				246,
-				182,
-				4
+				255,
+				255,
+				255
 			]
 		]
 	],
-	"hideFreeplay": false,
-	"weekBackground": "tank",
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": true,
+	"weekBackground": "stage",
+	"difficulties": "Normal",
 	"weekCharacters": [
-		"tankman",
+		"",
 		"bf",
 		"gf"
 	],
-	"storyName": "Tankman",
-	"weekName": "Week 7",
+	"storyName": "nose xdxdxdxd",
+	"weekName": "Custom Week",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"hideStoryMode": false,
-	"weekBefore": "week6",
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
 	"startUnlocked": true
 }

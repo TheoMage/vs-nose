@@ -1,0 +1,2 @@
+value 1: true si quieres que inicie y false si quieres que pare
+value 2: cantidad que quieres que sume, (recomendable 0.001)

@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-107,
+				-199
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "nose left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-104,
+				-274
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "nose down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-174,
+				-127
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "nose up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-153,
+				-185
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "nose right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-130,
+				-190
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "nose idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-147,
+				446
+			],
+			"loop": false,
+			"anim": "recomiendo",
+			"fps": 24,
+			"name": "deberias",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/nosesprites",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "nose",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		-240,
+		-160
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

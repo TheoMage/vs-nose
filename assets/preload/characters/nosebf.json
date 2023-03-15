@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-52,
+				-213
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "nosebf left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-44,
+				-244
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "nosebf down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-104,
+				-129
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "nosebf up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-98,
+				-225
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "nosebf right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-120,
+				-190
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "nosebf idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/nosebfsprites",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "nosebf",
+	"flip_x": true,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		-330,
+		220
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -509,6 +509,11 @@ class PlayState extends MusicBeatState
 
 		switch (curStage)
 		{
+			case 'semen': //Week 1
+			var sg:BGSprite = new BGSprite('blanco', -300, 0, 0.9, 0.9);
+			add(sg);
+			
+
 			case 'stage': //Week 1
 				var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
 				add(bg);
