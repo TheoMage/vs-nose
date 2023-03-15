@@ -71,8 +71,8 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		//var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		//var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBG'));
-		var bg:FlxSprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.WHITE);
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBG'));
+		//var bg:FlxSprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.WHITE);
 		bg.scrollFactor.set();
 		//bg.setGraphicSize(Std.int(bg.width * 1.175));
 		//bg.updateHitbox();
