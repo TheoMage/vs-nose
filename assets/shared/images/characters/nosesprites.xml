@@ -84,4 +84,6 @@
 	<SubTexture name="nose up0001" x="1870" y="2470" width="365" height="671" frameX="-6" frameY="0" frameWidth="371" frameHeight="672"/>
 	<SubTexture name="nose up0002" x="2235" y="2470" width="369" height="663" frameX="0" frameY="-9" frameWidth="371" frameHeight="672"/>
 	<SubTexture name="nose up0003" x="2235" y="2470" width="369" height="663" frameX="0" frameY="-9" frameWidth="371" frameHeight="672"/>
+
+	<!-- hola soy elfb de élfb familia serie -->
 </TextureAtlas>
