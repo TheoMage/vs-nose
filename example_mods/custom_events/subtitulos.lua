@@ -19,6 +19,17 @@ function onEvent(n,v1,v2)
 end
 
 function onUpdate()
-    setProperty('nose.scale.x', getProperty('iconP2.scale.x'))
-    setProperty('nose.scale.y', getProperty('iconP2.scale.y'))
+    multx = lerp(1, getProperty('scaleP1.scale.x'), boundTo(1 - (elapsed * 9 * playbackRate), 0, 1));
+    multy = lerp(1, getProperty('scaleP1.scale.y'), boundTo(1 - (elapsed * 9 * playbackRate), 0, 1));
+
+    setProperty('nose.scale.x', multx)
+    setProperty('nose.scale.y', multy)
+end
+
+function onBeatHit()
+    if curBeat % 2 == 0 then
+        setProperty('nose.scale.x', 1.2)
+    elseif curBeat % 2 == 1 then
+        setProperty('nose.scale.x', 0.8)
+    end
 end
