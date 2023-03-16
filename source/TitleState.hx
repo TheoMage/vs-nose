@@ -15,6 +15,7 @@ import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.transition.TransitionData;
 import haxe.Json;
 import openfl.display.Bitmap;
+import openfl.display.Shader;
 import openfl.display.BitmapData;
 #if MODS_ALLOWED
 import sys.FileSystem;
