@@ -14,6 +14,8 @@ class ProShader {
 
 	function set_distort(value:Float):Float {
 		distort = value;
+		var hola:Array<Float>;
+		hola = [value];
 		shader.distort.value[0] = distort;
 		return distort;
 	}
