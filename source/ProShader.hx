@@ -25,6 +25,7 @@ class ProShaderShader extends FlxShader {
 	//hola theo
 	@:glFragmentSource('
 		#pragma header
+		#pragma version 120
 
 		/**
 		* https://www.shadertoy.com/view/wsdBWM

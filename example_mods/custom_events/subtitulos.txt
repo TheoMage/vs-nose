@@ -1,0 +1,2 @@
+value 1: lo que quieras que diga
+value 2: pon false si quieres que desaparezca
