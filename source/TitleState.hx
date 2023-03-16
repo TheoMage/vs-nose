@@ -1,5 +1,7 @@
 package;
 
+import openfl.filters.ShaderFilter;
+import openfl.filters.BitmapFilter;
 #if desktop
 import sys.thread.Thread;
 #end
@@ -318,10 +320,12 @@ class TitleState extends MusicBeatState
 		}
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
 
+		var hola:Array<BitmapFilter> = [new ShaderFilter(swagShader.shader)];
+
+		FlxG.camera.setFilters(hola);
+
 		add(gfDance);
-		gfDance.shader = swagShader.shader;
 		add(logoBl);
-		logoBl.shader = swagShader.shader;
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
 		#if (desktop && MODS_ALLOWED)
@@ -561,8 +565,8 @@ class TitleState extends MusicBeatState
 
 		if(swagShader != null)
 		{
-			if(controls.UI_LEFT) swagShader.distort -= elapsed * 0.1;
-			if(controls.UI_RIGHT) swagShader.distort += elapsed * 0.1;
+			if(controls.UI_LEFT) swagShader.distort -= elapsed * 0.5;
+			if(controls.UI_RIGHT) swagShader.distort += elapsed * 0.5;
 		}
 
 		super.update(elapsed);
