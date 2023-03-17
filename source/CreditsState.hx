@@ -36,7 +36,7 @@ class CreditsState extends MusicBeatState
 	var descBox:AttachedSprite;
 
 	var offsetThing:Float = -75;
-	var estatica:FlxSprite;
+	public var estatica:FlxSprite;
 
 	override function create()
 	{
@@ -159,9 +159,10 @@ class CreditsState extends MusicBeatState
 		estatica = new FlxSprite();
 		estatica.frames = Paths.getSparrowAtlas('estatica');
 		estatica.animation.addByPrefix('idle', 'idle', 24);
-		estatica.animation.stop();
-		estatica.alpha = 0.3;
+		estatica.alpha = 0.25;
 		estatica.visible = false;
+		add(estatica);
+
 		super.create();
 	}
 
@@ -256,20 +257,40 @@ class CreditsState extends MusicBeatState
 
 		var newColor:Int =  getCurrentBGColor();
 
+		/*if (creditsStuff[curSelected][0] != '...')
+		{
+			estatica.animation.stop();
+			FlxG.sound.music.pitch = 1;
+			if(newColor != intendedColor) {
+				if(colorTween != null) {
+					colorTween.cancel();
+				}
+				intendedColor = newColor;
+				colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
+					onComplete: function(twn:FlxTween) {
+						colorTween = null;
+					}
+				});
+			}
+		}
+		else
+		{
+			estatica.visible = true;
+			estatica.animation.play('idle');
+			FlxG.sound.music.pitch = 0.1;
+			if(newColor != intendedColor) {
+				if(colorTween != null) {
+					colorTween.cancel();
+				}
+				intendedColor = newColor;
+				bg.color = intendedColor;
+			}
+		}*/
+
 		switch (creditsStuff[curSelected][0])
 		{
-			case '...':
-				FlxG.sound.music.pitch = 0.1;
-				if(newColor != intendedColor) {
-					if(colorTween != null) {
-						colorTween.cancel();
-					}
-					intendedColor = newColor;
-					bg.color = intendedColor;
-				}
-				estatica.visible = true;
-				estatica.animation.play('idle');
 			default:
+				estatica.animation.stop();
 				FlxG.sound.music.pitch = 1;
 				if(newColor != intendedColor) {
 					if(colorTween != null) {
@@ -281,6 +302,17 @@ class CreditsState extends MusicBeatState
 							colorTween = null;
 						}
 					});
+				}
+			case '...':
+				estatica.visible = true;
+				estatica.animation.play('idle');
+				FlxG.sound.music.pitch = 0.1;
+				if(newColor != intendedColor) {
+					if(colorTween != null) {
+						colorTween.cancel();
+					}
+					intendedColor = newColor;
+					bg.color = intendedColor;
 				}
 		}
 
