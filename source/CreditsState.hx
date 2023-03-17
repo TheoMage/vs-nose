@@ -36,6 +36,7 @@ class CreditsState extends MusicBeatState
 	var descBox:AttachedSprite;
 
 	var offsetThing:Float = -75;
+	var estatica:FlxSprite;
 
 	override function create()
 	{
@@ -85,6 +86,8 @@ class CreditsState extends MusicBeatState
 			['TheoMag',		'theomag',		'Hola ise la animasion el arte la cancion el chart el codigo el github el gamebanana el twitter el youtube el facebook el myspace el instagram el negronds el devianart',								'https://twitter.com/TheoMag_',	'4F0C8C'],
 			['Elfb34',			'elfd34',			'iso codigo o algo no me acuedo',							'https://twitter.com/elfb344',		'FFFFFF'],
 			['Mrlorendd',				'lorend',			'es la voz del te recomiendo hacer musica con amenbresk',						'https://as1.ftcdn.net/v2/jpg/01/38/11/80/1000_F_138118029_Rw53F6jZUqAA3omuPlBxE7IUdfAch8zz.jpg',			'FF1266'],
+			['Ezio',				'ezio',			'dijo que le encanta el pene y lo pusimoz en el mdo',						'https://www.tiktok.com/@ezio_real',			'FFFFFF'],
+			['...',				'',			'NO PRESIONES ENTER',						'https://media.discordapp.net/attachments/816703284114096159/1076983913525821680/attachment-1-2.gif',			'000000']
 		];
 		
 		for(i in pisspoop){
@@ -107,9 +110,22 @@ class CreditsState extends MusicBeatState
 					Paths.currentModDirectory = creditsStuff[i][5];
 				}
 
-				var icon:AttachedSprite = new AttachedSprite('credits/' + creditsStuff[i][1]);
-				icon.xAdd = optionText.width + 10;
-				icon.sprTracker = optionText;
+				var icon:AttachedSprite = null;
+
+				switch (creditsStuff[i][0])
+				{
+					case 'Ezio':
+						icon = new AttachedSprite('credits/' + creditsStuff[i][1], 'idle', null, true);
+						icon.xAdd = optionText.width + 10;
+						icon.yAdd = optionText.height - (icon.height / 4);
+						icon.sprTracker = optionText;
+					case '...':
+
+					default:
+						icon = new AttachedSprite('credits/' + creditsStuff[i][1]);
+						icon.xAdd = optionText.width + 10;
+						icon.sprTracker = optionText;
+				}
 	
 				// using a FlxGroup is too much fuss!
 				iconArray.push(icon);
@@ -136,9 +152,17 @@ class CreditsState extends MusicBeatState
 		descBox.sprTracker = descText;
 		add(descText);
 
+		estatica = new FlxSprite();
+		estatica.frames = Paths.getSparrowAtlas('estatica');
+		estatica.animation.addByPrefix('idle', 'idle', 24);
+		estatica.alpha = 0.25;
+		estatica.visible = false;
+		add(estatica);
+
 		bg.color = getCurrentBGColor();
 		intendedColor = bg.color;
 		changeSelection();
+
 		super.create();
 	}
 
@@ -186,10 +210,15 @@ class CreditsState extends MusicBeatState
 			}
 
 			if(controls.ACCEPT && (creditsStuff[curSelected][3] == null || creditsStuff[curSelected][3].length > 4)) {
-				CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+				if (creditsStuff[curSelected][0] != '...')
+					CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+				else
+					playSong('nose.exe', 'Normal');
 			}
 			if (controls.BACK)
 			{
+				FlxG.sound.music.pitch = 1;
+				
 				if(colorTween != null) {
 					colorTween.cancel();
 				}
@@ -232,17 +261,69 @@ class CreditsState extends MusicBeatState
 		} while(unselectableCheck(curSelected));
 
 		var newColor:Int =  getCurrentBGColor();
-		if(newColor != intendedColor) {
-			if(colorTween != null) {
-				colorTween.cancel();
-			}
-			intendedColor = newColor;
-			colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
-				onComplete: function(twn:FlxTween) {
-					colorTween = null;
+
+		if (creditsStuff[curSelected][0] != '...')
+		{
+			estatica.visible = false;
+			estatica.animation.stop();
+
+			FlxG.sound.music.pitch = 1;
+
+			if(newColor != intendedColor) {
+				if(colorTween != null) {
+					colorTween.cancel();
 				}
-			});
+				intendedColor = newColor;
+				colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
+					onComplete: function(twn:FlxTween) {
+						colorTween = null;
+					}
+				});
+			}
 		}
+		else
+		{
+			estatica.visible = true;
+			estatica.animation.play('idle');
+
+			FlxG.sound.music.pitch = 0.1;
+			if(newColor != intendedColor) {
+				if(colorTween != null) {
+					colorTween.cancel();
+				}
+				intendedColor = newColor;
+				bg.color = intendedColor;
+			}
+		}
+
+		/*switch (creditsStuff[curSelected][0])
+		{
+			default:
+				estatica.animation.stop();
+				FlxG.sound.music.pitch = 1;
+				if(newColor != intendedColor) {
+					if(colorTween != null) {
+						colorTween.cancel();
+					}
+					intendedColor = newColor;
+					colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
+						onComplete: function(twn:FlxTween) {
+							colorTween = null;
+						}
+					});
+				}
+			case '...':
+				estatica.visible = true;
+				estatica.animation.play('idle');
+				FlxG.sound.music.pitch = 0.1;
+				if(newColor != intendedColor) {
+					if(colorTween != null) {
+						colorTween.cancel();
+					}
+					intendedColor = newColor;
+					bg.color = intendedColor;
+				}
+		}*/
 
 		var bullShit:Int = 0;
 
@@ -300,6 +381,25 @@ class CreditsState extends MusicBeatState
 			bgColor = '0xFF' + bgColor;
 		}
 		return Std.parseInt(bgColor);
+	}
+
+	function playSong(name:String, diff:String)
+	{
+		var hola:Array<String> = [diff];
+	
+		CoolUtil.difficulties = hola;
+	
+		var songLowercase:String = Paths.formatToSongPath(name);
+		var poop:String = Highscore.formatSong(songLowercase, 0);
+	
+		PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+		PlayState.isStoryMode = false;
+		PlayState.storyDifficulty = 0;
+	
+		trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
+			
+		LoadingState.loadAndSwitchState(new PlayState());
+		FlxG.sound.music.volume = 0;
 	}
 
 	private function unselectableCheck(num:Int):Bool {
