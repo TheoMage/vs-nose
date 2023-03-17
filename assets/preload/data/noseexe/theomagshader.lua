@@ -26,18 +26,17 @@ function onCreatePost()
     setShaderBool('vcr', 'distortionOn', true)
     setShaderBool('vcr', 'scanlinesOn', true)
     setShaderBool('vcr', 'vignetteMoving', true)
-
+    
     runHaxeCode([[
         var camGameShaders:Array<ShaderEffect> = [];
 
-            camGameShaders.push(game.getLuaObject("vcr").shader);
+            camGameShaders.push(game.getLuaObject("theomagshader").shader);
             var newCamEffects:Array<BitmapFilter> = []; // IT SHUTS HAXE UP IDK WHY BUT WHATEVER IDK WHY I CANT JUST ARRAY<SHADERFILTER>
             var newCamEffectsHUD:Array<BitmapFilter> = [];
 
             for(i in camGameShaders){
                 newCamEffectsHUD.push(new ShaderFilter(game.getLuaObject("vcr").shader));
                 newCamEffects.push(new ShaderFilter(game.getLuaObject("vcr").shader));
-                newCamEffects.push(new ShaderFilter(game.getLuaObject("theomagshader").shader));
             }
 
             game.camGame.setFilters(newCamEffects);
