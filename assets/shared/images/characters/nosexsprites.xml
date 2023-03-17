@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="nosexsprites.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="nosex down0000" x="0" y="0" width="332" height="489" pivotX="127.55" pivotY="99.25" frameX="0" frameY="-12" frameWidth="332" frameHeight="501"/>
+	<SubTexture name="nosex down0001" x="0" y="0" width="332" height="489" frameX="0" frameY="-12" frameWidth="332" frameHeight="501"/>
+	<SubTexture name="nosex down0002" x="332" y="0" width="320" height="501" frameX="-6" frameY="0" frameWidth="332" frameHeight="501"/>
+	<SubTexture name="nosex down0003" x="332" y="0" width="320" height="501" frameX="-6" frameY="0" frameWidth="332" frameHeight="501"/>
+	<SubTexture name="nosex idle0000" x="652" y="0" width="297" height="532" pivotX="11.05" pivotY="4.2" frameX="0" frameY="-32" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0001" x="652" y="0" width="297" height="532" frameX="0" frameY="-32" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0002" x="949" y="0" width="291" height="530" frameX="-9" frameY="-34" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0003" x="949" y="0" width="291" height="530" frameX="-9" frameY="-34" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0004" x="1240" y="0" width="296" height="544" frameX="-6" frameY="-20" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0005" x="1536" y="0" width="296" height="544" frameX="-6" frameY="-20" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0006" x="0" y="544" width="304" height="553" frameX="-4" frameY="-11" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0007" x="0" y="544" width="304" height="553" frameX="-4" frameY="-11" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0008" x="304" y="544" width="306" height="560" frameX="-4" frameY="-4" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0009" x="304" y="544" width="306" height="560" frameX="-4" frameY="-4" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0010" x="610" y="544" width="308" height="564" frameX="-3" frameY="0" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0011" x="918" y="544" width="308" height="564" frameX="-3" frameY="0" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0012" x="1226" y="544" width="308" height="564" frameX="-3" frameY="0" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex idle0013" x="1226" y="544" width="308" height="564" frameX="-3" frameY="0" frameWidth="311" frameHeight="564"/>
+	<SubTexture name="nosex left0000" x="1534" y="544" width="428" height="540" pivotX="232.1" pivotY="169.85" frameX="0" frameY="0" frameWidth="432" frameHeight="540"/>
+	<SubTexture name="nosex left0001" x="1534" y="544" width="428" height="540" frameX="0" frameY="0" frameWidth="432" frameHeight="540"/>
+	<SubTexture name="nosex left0002" x="0" y="1108" width="421" height="540" frameX="-11" frameY="0" frameWidth="432" frameHeight="540"/>
+	<SubTexture name="nosex left0003" x="0" y="1108" width="421" height="540" frameX="-11" frameY="0" frameWidth="432" frameHeight="540"/>
+	<SubTexture name="nosex right0000" x="421" y="1108" width="467" height="621" pivotX="30.45" pivotY="201.85" frameX="-16" frameY="0" frameWidth="483" frameHeight="621"/>
+	<SubTexture name="nosex right0001" x="421" y="1108" width="467" height="621" frameX="-16" frameY="0" frameWidth="483" frameHeight="621"/>
+	<SubTexture name="nosex right0002" x="888" y="1108" width="476" height="621" frameX="0" frameY="0" frameWidth="483" frameHeight="621"/>
+	<SubTexture name="nosex right0003" x="888" y="1108" width="476" height="621" frameX="0" frameY="0" frameWidth="483" frameHeight="621"/>
+	<SubTexture name="nosex up0000" x="1364" y="1108" width="303" height="652" pivotX="95.85" pivotY="274.75" frameX="-2" frameY="0" frameWidth="314" frameHeight="652"/>
+	<SubTexture name="nosex up0001" x="1364" y="1108" width="303" height="652" frameX="-2" frameY="0" frameWidth="314" frameHeight="652"/>
+	<SubTexture name="nosex up0002" x="1667" y="1108" width="314" height="639" frameX="0" frameY="-13" frameWidth="314" frameHeight="652"/>
+	<SubTexture name="nosex up0003" x="1667" y="1108" width="314" height="639" frameX="0" frameY="-13" frameWidth="314" frameHeight="652"/>
+</TextureAtlas>

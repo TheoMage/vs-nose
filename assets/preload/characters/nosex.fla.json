@@ -2,89 +2,67 @@
 	"animations": [
 		{
 			"offsets": [
-				-107,
-				-199
+				5,
+				-202
 			],
 			"loop": false,
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "nose left",
+			"name": "nosex left",
 			"indices": []
 		},
 		{
 			"offsets": [
-				-104,
-				-274
+				-91,
+				-263
 			],
 			"loop": false,
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "nose down",
+			"name": "nosex down",
 			"indices": []
 		},
 		{
 			"offsets": [
-				-174,
-				-127
+				-122,
+				-98
 			],
 			"loop": false,
 			"anim": "singUP",
 			"fps": 24,
-			"name": "nose up",
+			"name": "nosex up",
 			"indices": []
 		},
 		{
 			"offsets": [
-				-153,
-				-185
+				-193,
+				-165
 			],
 			"loop": false,
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "nose right",
+			"name": "nosex right",
 			"indices": []
 		},
 		{
 			"offsets": [
-				-130,
+				-108,
 				-190
 			],
 			"loop": false,
 			"anim": "idle",
 			"fps": 24,
-			"name": "nose idle",
-			"indices": []
-		},
-		{
-			"offsets": [
-				-147,
-				446
-			],
-			"loop": false,
-			"anim": "recomiendo",
-			"fps": 24,
-			"name": "deberias",
-			"indices": []
-		},
-		{
-			"offsets": [
-				-134,
-				-140
-			],
-			"loop": false,
-			"anim": "risa",
-			"fps": 24,
-			"name": "nose risa",
+			"name": "nosex idle",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/nosesprites",
+	"image": "characters/nosexsprites",
 	"position": [
 		0,
 		0
 	],
-	"healthicon": "nose",
+	"healthicon": "nosex",
 	"flip_x": false,
 	"healthbar_colors": [
 		255,
@@ -92,8 +70,8 @@
 		255
 	],
 	"camera_position": [
-		-240,
-		-160
+		-150,
+		280
 	],
 	"sing_duration": 6.1,
 	"scale": 1
