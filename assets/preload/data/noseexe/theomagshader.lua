@@ -26,7 +26,7 @@ function onCreatePost()
     setShaderBool('vcr', 'distortionOn', true)
     setShaderBool('vcr', 'scanlinesOn', true)
     setShaderBool('vcr', 'vignetteMoving', true)
-    
+
     runHaxeCode([[
         var camGameShaders:Array<ShaderEffect> = [];
 
@@ -37,6 +37,7 @@ function onCreatePost()
             for(i in camGameShaders){
                 newCamEffectsHUD.push(new ShaderFilter(game.getLuaObject("vcr").shader));
                 newCamEffects.push(new ShaderFilter(game.getLuaObject("vcr").shader));
+                newCamEffects.push(new ShaderFilter(game.getLuaObject("theomagshader").shader));
             }
 
             game.camGame.setFilters(newCamEffects);
