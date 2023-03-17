@@ -10,8 +10,6 @@
     uniform float glitchModifier;
     uniform vec3 iResolution;
 
-    uniform float iTime;
-
     float onOff(float a, float b, float c)
     {
     	return step(c, sin(iTime + a*cos(iTime*b)));
@@ -86,7 +84,7 @@
     }
     void main()
     {
-    	vec2 uv = openfl_TextureCoordv.xy;
+    	vec2 uv = openfl_TextureCoordv;
       vec2 curUV = screenDistort(uv);
     	uv = scandistort(curUV);
     	vec4 video = getVideo(uv);

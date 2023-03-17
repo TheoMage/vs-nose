@@ -1,6 +1,7 @@
 hola = 0
 sumar = 0
 restar = 0
+sisi = 0
 empezar = false
 
 terminar = false
@@ -20,18 +21,27 @@ function onCreatePost()
 
     setSpriteShader("vcr", "vcr")
 
+    setShaderBool('vcr', 'vignetteOn', true)
+    setShaderBool('vcr', 'perspectiveOn', true)
+    setShaderBool('vcr', 'distortionOn', true)
+    setShaderBool('vcr', 'scanlinesOn', true)
+    setShaderBool('vcr', 'vignetteMoving', true)
+
     runHaxeCode([[
         var camGameShaders:Array<ShaderEffect> = [];
 
             camGameShaders.push(game.getLuaObject("vcr").shader);
             var newCamEffects:Array<BitmapFilter> = []; // IT SHUTS HAXE UP IDK WHY BUT WHATEVER IDK WHY I CANT JUST ARRAY<SHADERFILTER>
+            var newCamEffectsHUD:Array<BitmapFilter> = [];
+
             for(i in camGameShaders){
+                newCamEffectsHUD.push(new ShaderFilter(game.getLuaObject("vcr").shader));
                 newCamEffects.push(new ShaderFilter(game.getLuaObject("vcr").shader));
                 newCamEffects.push(new ShaderFilter(game.getLuaObject("theomagshader").shader));
             }
 
             game.camGame.setFilters(newCamEffects);
-            //game.camHUD.setFilters(newCamEffects);
+            game.camHUD.setFilters(newCamEffectsHUD);
             //game.camOther.setFilters(newCamEffects);
     ]])
 end
@@ -54,6 +64,9 @@ function onEvent(n,v1,v2)
 end
 
 function onUpdate()
+    sisi = sisi + 0.01
+    setShaderFloat('vcr', 'iTime', sisi)
+
     if empezar then
         hola = hola + sumar
         setShaderFloat('theomagshader', 'distort', hola)
