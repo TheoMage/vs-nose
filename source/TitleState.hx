@@ -1,5 +1,6 @@
 package;
 
+import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 import openfl.filters.BitmapFilter;
 #if desktop
@@ -322,7 +323,6 @@ class TitleState extends MusicBeatState
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
 
 		var hola:Array<BitmapFilter> = [new ShaderFilter(swagShader.shader)];
-
 		FlxG.camera.setFilters(hola);
 
 		add(gfDance);
