@@ -36,7 +36,7 @@ class CreditsState extends MusicBeatState
 	var descBox:AttachedSprite;
 
 	var offsetThing:Float = -75;
-	private var estatica:FlxSprite;
+	var estatica:FlxSprite;
 
 	override function create()
 	{
@@ -152,16 +152,16 @@ class CreditsState extends MusicBeatState
 		descBox.sprTracker = descText;
 		add(descText);
 
-		bg.color = getCurrentBGColor();
-		intendedColor = bg.color;
-		changeSelection();
-
 		estatica = new FlxSprite();
 		estatica.frames = Paths.getSparrowAtlas('estatica');
 		estatica.animation.addByPrefix('idle', 'idle', 24);
 		estatica.alpha = 0.25;
 		estatica.visible = false;
 		add(estatica);
+
+		bg.color = getCurrentBGColor();
+		intendedColor = bg.color;
+		changeSelection();
 
 		super.create();
 	}
@@ -210,10 +210,15 @@ class CreditsState extends MusicBeatState
 			}
 
 			if(controls.ACCEPT && (creditsStuff[curSelected][3] == null || creditsStuff[curSelected][3].length > 4)) {
-				CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+				if (creditsStuff[curSelected][0] != '...')
+					CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+				else
+					playSong('nose.exe', 'Normal');
 			}
 			if (controls.BACK)
 			{
+				FlxG.sound.music.pitch = 1;
+				
 				if(colorTween != null) {
 					colorTween.cancel();
 				}
@@ -376,6 +381,25 @@ class CreditsState extends MusicBeatState
 			bgColor = '0xFF' + bgColor;
 		}
 		return Std.parseInt(bgColor);
+	}
+
+	function playSong(name:String, diff:String)
+	{
+		var hola:Array<String> = [diff];
+	
+		CoolUtil.difficulties = hola;
+	
+		var songLowercase:String = Paths.formatToSongPath(name);
+		var poop:String = Highscore.formatSong(songLowercase, 0);
+	
+		PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+		PlayState.isStoryMode = false;
+		PlayState.storyDifficulty = 0;
+	
+		trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
+			
+		LoadingState.loadAndSwitchState(new PlayState());
+		FlxG.sound.music.volume = 0;
 	}
 
 	private function unselectableCheck(num:Int):Bool {
