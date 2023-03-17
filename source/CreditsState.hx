@@ -36,7 +36,7 @@ class CreditsState extends MusicBeatState
 	var descBox:AttachedSprite;
 
 	var offsetThing:Float = -75;
-	public var estatica:FlxSprite;
+	private var estatica:FlxSprite;
 
 	override function create()
 	{
@@ -257,10 +257,13 @@ class CreditsState extends MusicBeatState
 
 		var newColor:Int =  getCurrentBGColor();
 
-		/*if (creditsStuff[curSelected][0] != '...')
+		if (creditsStuff[curSelected][0] != '...')
 		{
+			estatica.visible = false;
 			estatica.animation.stop();
+
 			FlxG.sound.music.pitch = 1;
+
 			if(newColor != intendedColor) {
 				if(colorTween != null) {
 					colorTween.cancel();
@@ -277,6 +280,7 @@ class CreditsState extends MusicBeatState
 		{
 			estatica.visible = true;
 			estatica.animation.play('idle');
+
 			FlxG.sound.music.pitch = 0.1;
 			if(newColor != intendedColor) {
 				if(colorTween != null) {
@@ -285,9 +289,9 @@ class CreditsState extends MusicBeatState
 				intendedColor = newColor;
 				bg.color = intendedColor;
 			}
-		}*/
+		}
 
-		switch (creditsStuff[curSelected][0])
+		/*switch (creditsStuff[curSelected][0])
 		{
 			default:
 				estatica.animation.stop();
@@ -314,7 +318,7 @@ class CreditsState extends MusicBeatState
 					intendedColor = newColor;
 					bg.color = intendedColor;
 				}
-		}
+		}*/
 
 		var bullShit:Int = 0;
 
