@@ -220,7 +220,11 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'start':
-										playSong('nose', 'Normal');
+										if (!ClientPrefs.dSides)
+											playSong('nose', 'Normal');
+										else
+											playSong('nose', 'Dside');
+
 										MusicBeatState.switchState(new PlayState());
 									case 'credits':
 										CreditsState.plantsvsohies = false;

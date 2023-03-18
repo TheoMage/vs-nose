@@ -145,6 +145,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		addOption(option);
 
+		var option:Option = new Option('D-Sides',
+		'Activa el Modo D-Sides',
+		'dSides',
+		'bool',
+		false);
+		addOption(option);
+
 		super();
 	}
 

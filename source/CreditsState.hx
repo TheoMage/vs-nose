@@ -92,7 +92,7 @@ class CreditsState extends MusicBeatState
 			['...',				'',			'NO PRESIONES ENTER',						'https://media.discordapp.net/attachments/816703284114096159/1076983913525821680/attachment-1-2.gif',			'000000']
 		];
 
-		if(!FlxG.save.data.exeUnlocked)
+		if(!FlxG.save.data.exeUnlocked || ClientPrefs.dSides)
 		{
 			pisspoop.remove(pisspoop[5]);
 		}

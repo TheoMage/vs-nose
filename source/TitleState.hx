@@ -639,7 +639,7 @@ class TitleState extends MusicBeatState
 					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
-				case 4:
+				case 3:
 					#if PSYCH_WATERMARKS
 					addMoreText('Shadow Mario', 15);
 					addMoreText('RiverOaken', 15);
@@ -649,47 +649,55 @@ class TitleState extends MusicBeatState
 					#end
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
-				case 5:
+				case 4:
 					deleteCoolText();
+					createCoolText(['hola'], 15);
 				// credTextShit.visible = false;
 				// credTextShit.text = 'In association \nwith';
 				// credTextShit.screenCenter();
+				case 5:
+					addMoreText('hola', 15);
 				case 6:
+					deleteCoolText();
 					#if PSYCH_WATERMARKS
 					createCoolText(['Not associated', 'with'], -40);
 					#else
 					createCoolText(['In association', 'with'], -40);
 					#end
-				case 8:
+				case 7:
 					addMoreText('newgrounds', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
-				case 9:
+				case 8:
 					deleteCoolText();
 					ngSpr.visible = false;
 				// credTextShit.visible = false;
 
 				// credTextShit.text = 'Shoutouts Tom Fulp';
 				// credTextShit.screenCenter();
-				case 10:
+				case 9:
 					createCoolText([curWacky[0]]);
 				// credTextShit.visible = true;
-				case 12:
+				case 10:
 					addMoreText(curWacky[1]);
 				// credTextShit.text += '\nlmao';
-				case 13:
+				case 11:
 					deleteCoolText();
 				// credTextShit.visible = false;
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
-				case 14:
+				case 12:
 					addMoreText('Friday');
 				// credTextShit.visible = true;
-				case 15:
+				case 13:
 					addMoreText('Night');
 				// credTextShit.text += '\nNight';
-				case 16:
+				case 14:
 					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+				case 15:
+					addMoreText('Vs'); // credTextShit.text += '\nFunkin';
+				case 16:
+					addMoreText('nose'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();

@@ -730,7 +730,7 @@ class PlayState extends MusicBeatState
 		iconP1.alpha = ClientPrefs.healthBarAlpha;
 		add(iconP1);
 
-		iconP2 = new HealthIcon('ezio', false, true);
+		iconP2 = new HealthIcon(dad.healthIcon, false);
 		iconP2.y = healthBar.y - 75;
 		iconP2.visible = !ClientPrefs.hideHud;
 		iconP2.alpha = ClientPrefs.healthBarAlpha;
@@ -1473,7 +1473,11 @@ class PlayState extends MusicBeatState
 		previousFrameTime = FlxG.game.ticks;
 		lastReportedPlayheadPosition = 0;
 
-		FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
+		if(CoolUtil.difficultyString() != 'DSIDE')
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
+		else
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase()), 1, false);
+
 		FlxG.sound.music.pitch = playbackRate;
 		FlxG.sound.music.onComplete = finishSong.bind();
 		vocals.play();
@@ -1528,14 +1532,25 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
+		trace(Paths.formatToSongPath(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase()));
+
 		if (SONG.needsVoices)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
+		{
+			if(CoolUtil.difficultyString() != 'DSIDE')
+				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
+			else
+				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song + '-dside'));
+		}
 		else
 			vocals = new FlxSound();
 
 		vocals.pitch = playbackRate;
 		FlxG.sound.list.add(vocals);
-		FlxG.sound.list.add(new FlxSound().loadEmbedded(Paths.inst(PlayState.SONG.song)));
+
+		if(CoolUtil.difficultyString() != 'DSIDE')
+			FlxG.sound.list.add(new FlxSound().loadEmbedded(Paths.inst(PlayState.SONG.song)));
+		else
+			FlxG.sound.list.add(new FlxSound().loadEmbedded(Paths.inst(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase())));
 
 		notes = new FlxTypedGroup<Note>();
 		add(notes);
@@ -2787,7 +2802,11 @@ class PlayState extends MusicBeatState
 				}
 
 				if(FlxG.save.data.exeUnlocked == true)
-					MusicBeatState.switchState(new MainMenuState());
+					
+					if(SONG.song == 'nose.exe')
+						MusicBeatState.switchState(new DsidesState());
+					else
+						MusicBeatState.switchState(new MainMenuState());
 				else
 				{
 					CreditsState.plantsvsohies = true;

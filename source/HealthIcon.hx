@@ -7,6 +7,8 @@ using StringTools;
 
 class HealthIcon extends FlxSprite
 {
+	public var animOffsets:Map<String, Array<Dynamic>>;
+
 	public var sprTracker:FlxSprite;
 	private var isOldIcon:Bool = false;
 	private var isPlayer:Bool = false;
@@ -15,6 +17,12 @@ class HealthIcon extends FlxSprite
 
 	public function new(char:String = 'bf', isPlayer:Bool = false, anim:Bool = false, framerate:Int = 24)
 	{
+		#if (haxe >= "4.0.0")
+		animOffsets = new Map();
+		#else
+		animOffsets = new Map<String, Array<Dynamic>>();
+		#end
+
 		super();
 		isOldIcon = (char == 'bf-old');
 		this.isPlayer = isPlayer;
@@ -73,6 +81,18 @@ class HealthIcon extends FlxSprite
 		}
 	}
 
+	public function playAnim(name, forced, reverse, startFrame) {
+		var daOffset = animOffsets.get(name);
+		if (animOffsets.exists(name))
+		{
+			offset.set(daOffset[0], daOffset[1]);
+		}
+		else
+			offset.set(0, 0);
+
+		animation.play(name, forced, reverse, startFrame);
+	}
+
 	override function updateHitbox()
 	{
 		super.updateHitbox();
@@ -86,5 +106,10 @@ class HealthIcon extends FlxSprite
 
 	public function getAnim():Bool {
 		return p_anim;
+	}
+
+	public function addOffset(name:String, x:Float = 0, y:Float = 0)
+	{
+		animOffsets[name] = [x, y];
 	}
 }

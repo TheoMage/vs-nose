@@ -1788,8 +1788,26 @@ class FunkinLua {
 		Lua_helper.add_callback(lua, "addAnimationByIndicesLoop", function(obj:String, name:String, prefix:String, indices:String, framerate:Int = 24) {
 			return addAnimByIndices(obj, name, prefix, indices, framerate, true);
 		});
-		
 
+		Lua_helper.add_callback(lua, "addIconAnimationByPrefix", function(icon:String, name:String, prefix:String, framerate:Int = 24, loop:Bool = true) {
+			switch(icon.toLowerCase())
+			{
+				case 'iconp1' | 'p1' | 'bf':
+					PlayState.instance.iconP1.animation.addByPrefix(name, prefix, framerate, loop);
+					if(PlayState.instance.iconP1.animation.curAnim == null) {
+						PlayState.instance.iconP1.animation.play(name, true);
+					}
+					return true;
+				case 'iconp2' | 'p2' | 'dad':
+					PlayState.instance.iconP2.animation.addByPrefix(name, prefix, framerate, loop);
+					if(PlayState.instance.iconP2.animation.curAnim == null) {
+						PlayState.instance.iconP2.animation.play(name, true);
+					}
+					return true;
+			}
+			return false;
+		});
+		
 		Lua_helper.add_callback(lua, "playAnim", function(obj:String, name:String, forced:Bool = false, ?reverse:Bool = false, ?startFrame:Int = 0)
 		{
 			if(PlayState.instance.getLuaObject(obj, false) != null) {
@@ -1824,6 +1842,13 @@ class FunkinLua {
 						var spr:Character = obj;
 						spr.playAnim(name, forced, reverse, startFrame);
 					}
+					else if(Std.isOfType(spr, HealthIcon))
+					{
+						//convert spr to HealthIcon
+						var obj:Dynamic = spr;
+						var spr:HealthIcon = obj;
+						spr.playAnim(name, forced, reverse, startFrame);
+					}
 					else
 						spr.animation.play(name, forced, reverse, startFrame);
 				}
@@ -1841,6 +1866,19 @@ class FunkinLua {
 			if(char != null) {
 				char.addOffset(anim, x, y);
 				return true;
+			}
+			return false;
+		});
+
+		Lua_helper.add_callback(lua, "addIconOffset", function(icon:String, anim:String, x:Float, y:Float) {
+			switch(icon.toLowerCase())
+			{
+				case 'iconp1' | 'p1' | 'bf':
+					PlayState.instance.iconP1.addOffset(anim, x, y);
+					return true;
+				case 'iconp2' | 'p2' | 'dad':
+					PlayState.instance.iconP2.addOffset(anim, x, y);
+					return true;
 			}
 			return false;
 		});

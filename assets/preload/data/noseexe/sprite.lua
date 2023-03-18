@@ -18,14 +18,14 @@ end
 
 function onUpdatePost()
     setProperty('songLength', getRandomInt(200000, 500000))
-
+    setProperty('songPercent', getProperty('bar.x'))
     --setProperty('lentes.scale.x', getProperty('iconP2.scale.x'))
     --setProperty('lentes.scale.y', getProperty('iconP2.scale.y'))
 end
 
 function onUpdate()
-    setProperty('lentes.x', getProperty('iconP2.x') + 126)
-    setProperty('songPercent', getProperty('bar.x'))
+    --setProperty('lentes.x', getProperty('iconP2.x') + 126)
+    --setProperty('songPercent', getProperty('bar.x'))
 end
 
 function onBeatHit()
