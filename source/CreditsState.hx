@@ -29,6 +29,8 @@ class CreditsState extends MusicBeatState
 	private var iconArray:Array<AttachedSprite> = [];
 	private var creditsStuff:Array<Array<String>> = [];
 
+	public static var plantsvsohies:Bool = false;
+
 	var bg:FlxSprite;
 	var descText:FlxText;
 	var intendedColor:Int;
@@ -89,6 +91,11 @@ class CreditsState extends MusicBeatState
 			['Ezio',				'ezio',			'dijo que le encanta el pene y lo pusimoz en el mdo',						'https://www.tiktok.com/@ezio_real',			'FFFFFF'],
 			['...',				'',			'NO PRESIONES ENTER',						'https://media.discordapp.net/attachments/816703284114096159/1076983913525821680/attachment-1-2.gif',			'000000']
 		];
+
+		if(!FlxG.save.data.exeUnlocked)
+		{
+			pisspoop.remove(pisspoop[5]);
+		}
 		
 		for(i in pisspoop){
 			creditsStuff.push(i);
@@ -215,7 +222,7 @@ class CreditsState extends MusicBeatState
 				else
 					playSong('nose.exe', 'Normal');
 			}
-			if (controls.BACK)
+			if (controls.BACK && !plantsvsohies)
 			{
 				FlxG.sound.music.pitch = 1;
 				

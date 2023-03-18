@@ -11,13 +11,14 @@ class HealthIcon extends FlxSprite
 	private var isOldIcon:Bool = false;
 	private var isPlayer:Bool = false;
 	private var char:String = '';
+	private var p_anim:Bool = false;
 
-	public function new(char:String = 'bf', isPlayer:Bool = false)
+	public function new(char:String = 'bf', isPlayer:Bool = false, anim:Bool = false, framerate:Int = 24)
 	{
 		super();
 		isOldIcon = (char == 'bf-old');
 		this.isPlayer = isPlayer;
-		changeIcon(char);
+		changeIcon(char, anim, framerate);
 		scrollFactor.set();
 	}
 
@@ -35,20 +36,33 @@ class HealthIcon extends FlxSprite
 	}
 
 	private var iconOffsets:Array<Float> = [0, 0];
-	public function changeIcon(char:String) {
+	public function changeIcon(char:String, anim:Bool = false, framerate:Int = 24) {
 		if(this.char != char) {
 			var name:String = 'icons/' + char;
 			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char; //Older versions of psych engine's support
 			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-face'; //Prevents crash from missing icon
 			var file:Dynamic = Paths.image(name);
 
-			loadGraphic(file); //Load stupidly first for getting the file size
-			loadGraphic(file, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr
-			iconOffsets[0] = (width - 150) / 2;
-			iconOffsets[1] = (width - 150) / 2;
-			updateHitbox();
+			p_anim = anim;
 
-			animation.add(char, [0, 1], 0, false, isPlayer);
+			if (!anim)
+			{
+				loadGraphic(file); //Load stupidly first for getting the file size
+				loadGraphic(file, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr
+				iconOffsets[0] = (width - 150) / 2;
+				iconOffsets[1] = (width - 150) / 2;
+				updateHitbox();
+	
+				animation.add(char, [0, 1], 0, false, isPlayer);
+			}
+			else
+			{
+				frames = Paths.getSparrowAtlas(name); //Load stupidly first for getting the file size
+				updateHitbox();
+	
+				animation.addByPrefix(char, 'idle', framerate, true, isPlayer);
+			}
+
 			animation.play(char);
 			this.char = char;
 
@@ -68,5 +82,9 @@ class HealthIcon extends FlxSprite
 
 	public function getCharacter():String {
 		return char;
+	}
+
+	public function getAnim():Bool {
+		return p_anim;
 	}
 }

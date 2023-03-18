@@ -223,6 +223,7 @@ class MainMenuState extends MusicBeatState
 										playSong('nose', 'Normal');
 										MusicBeatState.switchState(new PlayState());
 									case 'credits':
+										CreditsState.plantsvsohies = false;
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
