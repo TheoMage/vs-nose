@@ -1,11 +1,13 @@
 package;
 
+import vlc.MP4Handler;
 import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 import openfl.filters.BitmapFilter;
 #if desktop
 import sys.thread.Thread;
 #end
+import openfl.utils.Assets as OpenFlAssets;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -66,6 +68,8 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
+
+	var hola:FlxSprite;
 	
 	var titleTextColors:Array<FlxColor> = [0xFF33FFFF, 0xFF3333CC];
 	var titleTextAlphas:Array<Float> = [1, .64];
@@ -205,6 +209,7 @@ class TitleState extends MusicBeatState
 		#elseif CHARTING
 		MusicBeatState.switchState(new ChartingState());
 		#else
+
 		if(FlxG.save.data.flashing == null && !FlashingState.leftState) {
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
@@ -216,7 +221,9 @@ class TitleState extends MusicBeatState
 			{
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					startIntro();
+					hola = new FlxSprite().makeGraphic(1280, 720, 0xFFFFF7FF);
+					add(hola);
+					startVideo('gameboy');
 				});
 			}
 		}
@@ -228,6 +235,8 @@ class TitleState extends MusicBeatState
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	//var swagShader:ProShader = null;
+
+	//FFF7FF
 
 	function startIntro()
 	{
@@ -381,8 +390,8 @@ class TitleState extends MusicBeatState
 		credGroup = new FlxGroup();
 		add(credGroup);
 		textGroup = new FlxGroup();
-
-		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		
+		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, 0xFFFFF7FF);
 		credGroup.add(blackScreen);
 
 		credTextShit = new Alphabet(0, 0, "", true);
@@ -788,4 +797,33 @@ class TitleState extends MusicBeatState
 			skippedIntro = true;
 		}
 	}
+
+	public function startVideo(name:String)
+	{
+		#if VIDEOS_ALLOWED	
+		var filepath:String = Paths.video(name);
+		#if sys
+		if(!FileSystem.exists(filepath))
+		#else
+		if(!OpenFlAssets.exists(filepath))
+		#end
+		{
+			FlxG.log.warn('Couldnt find video file: ' + name);
+			return;
+		}
+		
+		var video:MP4Handler = new MP4Handler();
+		video.playVideo(filepath);
+		video.finishCallback = function()
+		{
+			//aaah tlauncher ok
+			startIntro();
+			return;
+		}
+		#else
+		FlxG.log.warn('Platform not supported!');
+		startIntro();
+		return;
+		#end
+		}
 }

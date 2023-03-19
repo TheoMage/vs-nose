@@ -1,5 +1,6 @@
 package;
 
+import vlc.MP4Handler;
 #if desktop
 import Discord.DiscordClient;
 #end
