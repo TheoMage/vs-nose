@@ -7,7 +7,7 @@ import flixel.graphics.FlxGraphic;
 import Controls;
 
 class ClientPrefs {
-	public static var dSides:Bool = false;
+	public static var bSides:Bool = false;
 	public static var downScroll:Bool = false;
 	public static var middleScroll:Bool = false;
 	public static var opponentStrums:Bool = true;
@@ -95,7 +95,7 @@ class ClientPrefs {
 	}
 
 	public static function saveSettings() {
-		FlxG.save.data.dSides = dSides;
+		FlxG.save.data.bSides = bSides;
 		FlxG.save.data.downScroll = downScroll;
 		FlxG.save.data.middleScroll = middleScroll;
 		FlxG.save.data.opponentStrums = opponentStrums;

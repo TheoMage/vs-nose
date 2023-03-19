@@ -11,7 +11,7 @@ import flixel.addons.transition.FlxTransitionableState;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxTimer;
 
-class DsidesState extends MusicBeatState
+class BsidesState extends MusicBeatState
 {
 	public static var leftState:Bool = false;
 
@@ -24,7 +24,7 @@ class DsidesState extends MusicBeatState
 		add(bg);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Quieres Activar el Modo D-Sides?\n
+			"Quieres Activar el Modo B-Sides?\n
 			Presiona ENTER si Quieres\n
 			Presiona ESC si no\n
 			(Puedes Activarlo en Opciones)",
@@ -43,7 +43,7 @@ class DsidesState extends MusicBeatState
 				FlxTransitionableState.skipNextTransIn = true;
 				FlxTransitionableState.skipNextTransOut = true;
 				if(!back) {
-					ClientPrefs.dSides = true;
+					ClientPrefs.bSides = true;
 					ClientPrefs.saveSettings();
 					FlxG.sound.play(Paths.sound('confirmMenu'));
 					FlxFlicker.flicker(warnText, 1, 0.1, false, true, function(flk:FlxFlicker) {
