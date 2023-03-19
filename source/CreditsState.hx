@@ -90,12 +90,13 @@ class CreditsState extends MusicBeatState
 			['Elfb34',			'elfd34',			'iso codigo o algo no me acuedo',							'https://twitter.com/elfb344',		'FFFFFF'],
 			['Mrlorendd',				'lorend',			'es la voz del te recomiendo hacer musica con amenbresk',						'https://as1.ftcdn.net/v2/jpg/01/38/11/80/1000_F_138118029_Rw53F6jZUqAA3omuPlBxE7IUdfAch8zz.jpg',			'FF1266'],
 			['Ezio',				'ezio',			'dijo que le encanta el pene y lo pusimoz en el mdo',						'https://www.tiktok.com/@ezio_real',			'FFFFFF'],
+			['pohsan',				'posin',			'hiso el remis de bsid e epico',						'https://twitter.com/pohhsann',			'FFFFFF'],
 			['...',				'',			'NO PRESIONES ENTER',						'https://media.discordapp.net/attachments/816703284114096159/1076983913525821680/attachment-1-2.gif',			'000000']
 		];
 
 		if(!FlxG.save.data.exeUnlocked || ClientPrefs.bSides)
 		{
-			pisspoop.remove(pisspoop[5]);
+			pisspoop.remove(pisspoop[6]);
 		}
 		
 		for(i in pisspoop){
@@ -123,6 +124,11 @@ class CreditsState extends MusicBeatState
 				switch (creditsStuff[i][0])
 				{
 					case 'Ezio':
+						icon = new AttachedSprite('credits/' + creditsStuff[i][1], 'idle', null, true);
+						icon.xAdd = optionText.width + 10;
+						icon.yAdd = optionText.height - (icon.height / 4);
+						icon.sprTracker = optionText;
+					case 'pohsan':
 						icon = new AttachedSprite('credits/' + creditsStuff[i][1], 'idle', null, true);
 						icon.xAdd = optionText.width + 10;
 						icon.yAdd = optionText.height - (icon.height / 4);
