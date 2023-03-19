@@ -223,7 +223,7 @@ class MainMenuState extends MusicBeatState
 										if (!ClientPrefs.bSides)
 											playSong('nose', 'Normal');
 										else
-											playSong('nose', 'Bside');
+											playSong('sise', 'Bside');
 
 										MusicBeatState.switchState(new PlayState());
 									case 'credits':

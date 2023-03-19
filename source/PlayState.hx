@@ -1473,10 +1473,10 @@ class PlayState extends MusicBeatState
 		previousFrameTime = FlxG.game.ticks;
 		lastReportedPlayheadPosition = 0;
 
-		if(CoolUtil.difficultyString() != 'DSIDE')
+		//if(CoolUtil.difficultyString() != 'DSIDE')
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
-		else
-			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase()), 1, false);
+		/*else
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase()), 1, false);*/
 
 		FlxG.sound.music.pitch = playbackRate;
 		FlxG.sound.music.onComplete = finishSong.bind();
@@ -1536,10 +1536,10 @@ class PlayState extends MusicBeatState
 
 		if (SONG.needsVoices)
 		{
-			if(CoolUtil.difficultyString() != 'DSIDE')
+			//if(CoolUtil.difficultyString() != 'DSIDE')
 				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
-			else
-				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song + '-dside'));
+			/*else
+				vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song + '-dside'));*/
 		}
 		else
 			vocals = new FlxSound();
@@ -1547,10 +1547,10 @@ class PlayState extends MusicBeatState
 		vocals.pitch = playbackRate;
 		FlxG.sound.list.add(vocals);
 
-		if(CoolUtil.difficultyString() != 'DSIDE')
+		//if(CoolUtil.difficultyString() != 'DSIDE')
 			FlxG.sound.list.add(new FlxSound().loadEmbedded(Paths.inst(PlayState.SONG.song)));
-		else
-			FlxG.sound.list.add(new FlxSound().loadEmbedded(Paths.inst(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase())));
+		/*else
+			FlxG.sound.list.add(new FlxSound().loadEmbedded(Paths.inst(PlayState.SONG.song + '-' + CoolUtil.difficultyString().toLowerCase())));*/
 
 		notes = new FlxTypedGroup<Note>();
 		add(notes);
