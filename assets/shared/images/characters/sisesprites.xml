@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="siseassets.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sise down0000" x="0" y="0" width="385" height="593" pivotX="-29.95" pivotY="125.45" frameX="0" frameY="-9" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise down0001" x="0" y="0" width="385" height="593" frameX="0" frameY="-9" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise down0002" x="385" y="0" width="370" height="602" frameX="-8" frameY="0" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise down0003" x="385" y="0" width="370" height="602" frameX="-8" frameY="0" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise idle0000" x="755" y="0" width="380" height="590" pivotX="0.25" pivotY="-7.05" frameX="0" frameY="-26" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0001" x="755" y="0" width="380" height="590" frameX="0" frameY="-26" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0002" x="1135" y="0" width="387" height="589" frameX="0" frameY="-27" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0003" x="1135" y="0" width="387" height="589" frameX="0" frameY="-27" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0004" x="1522" y="0" width="391" height="604" frameX="-1" frameY="-12" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0005" x="1522" y="0" width="391" height="604" frameX="-1" frameY="-12" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0006" x="0" y="604" width="390" height="610" frameX="-5" frameY="-6" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0007" x="0" y="604" width="390" height="610" frameX="-5" frameY="-6" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0008" x="390" y="604" width="389" height="614" frameX="-6" frameY="-2" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0009" x="390" y="604" width="389" height="614" frameX="-6" frameY="-2" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0010" x="779" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0011" x="779" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0012" x="1169" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0013" x="1169" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise left0000" x="1559" y="604" width="320" height="598" pivotX="4.15" pivotY="162.65"/>
+	<SubTexture name="sise left0001" x="1559" y="604" width="320" height="598"/>
+	<SubTexture name="sise left0002" x="0" y="1220" width="301" height="596" frameX="-19" frameY="-2" frameWidth="320" frameHeight="598"/>
+	<SubTexture name="sise left0003" x="0" y="1220" width="301" height="596" frameX="-19" frameY="-2" frameWidth="320" frameHeight="598"/>
+	<SubTexture name="sise right0000" x="301" y="1220" width="463" height="654" pivotX="-67.1" pivotY="131.75" frameX="-6" frameY="0" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise right0001" x="301" y="1220" width="463" height="654" frameX="-6" frameY="0" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise right0002" x="764" y="1220" width="457" height="649" frameX="0" frameY="-5" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise right0003" x="764" y="1220" width="457" height="649" frameX="0" frameY="-5" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise up0000" x="1221" y="1220" width="377" height="681" pivotX="-76.3" pivotY="272.25" frameX="-3" frameY="0" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="sise up0001" x="1221" y="1220" width="377" height="681" frameX="-3" frameY="0" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="sise up0002" x="1598" y="1220" width="381" height="662" frameX="0" frameY="-19" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="sise up0003" x="1598" y="1220" width="381" height="662" frameX="0" frameY="-19" frameWidth="381" frameHeight="681"/>
+</TextureAtlas>
