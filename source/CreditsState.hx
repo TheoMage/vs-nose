@@ -41,6 +41,11 @@ class CreditsState extends MusicBeatState
 	var offsetThing:Float = -75;
 	var estatica:FlxSprite;
 
+	var randomTween:FlxTween;
+
+	var shit:AttachedSprite = null;
+	var quelespasa:AttachedSprite = null;
+
 	override function create()
 	{
 		#if desktop
@@ -87,16 +92,17 @@ class CreditsState extends MusicBeatState
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['VS NOSE XD TIM'],
 			['TheoMag',		'theomag',		'Hola ise la animasion el arte la cancion el chart el codigo el github el gamebanana el twitter el youtube el facebook el myspace el instagram el negronds el devianart',								'https://twitter.com/TheoMag_',	'4F0C8C'],
-			['Elfb34',			'elfd34',			'iso codigo o algo no me acuedo',							'https://twitter.com/elfb344',		'FFFFFF'],
+			['elfb34',			'elfd34',			'iso codigo o algo no me acuedo',							'https://twitter.com/elfb344',		'FFFFFF'],
 			['Mrlorendd',				'lorend',			'es la voz del te recomiendo hacer musica con amenbresk',						'https://as1.ftcdn.net/v2/jpg/01/38/11/80/1000_F_138118029_Rw53F6jZUqAA3omuPlBxE7IUdfAch8zz.jpg',			'FF1266'],
 			['Ezio',				'ezio',			'dijo que le encanta el pene y lo pusimoz en el mdo',						'https://www.tiktok.com/@ezio_real',			'FFFFFF'],
-			['pohsan',				'posin',			'hiso el remis de bsid e epico',						'https://twitter.com/pohhsann',			'FFFFFF'],
+			['pohsan',				'posin',			'hiso el remis de bside epico',						'https://twitter.com/pohhsann',			'FFFFFF'],
+			['Pescadin',			'pescadin',			'iso el dibujo d ela portada',						'https://twitter.com/pescacrinch',			'FFFFFF'],
 			['...',				'',			'NO PRESIONES ENTER',						'https://media.discordapp.net/attachments/816703284114096159/1076983913525821680/attachment-1-2.gif',			'000000']
 		];
 
 		if(!FlxG.save.data.exeUnlocked || ClientPrefs.bSides)
 		{
-			pisspoop.remove(pisspoop[6]);
+			pisspoop.remove(pisspoop[7]);
 		}
 		
 		for(i in pisspoop){
@@ -123,12 +129,7 @@ class CreditsState extends MusicBeatState
 
 				switch (creditsStuff[i][0])
 				{
-					case 'Ezio':
-						icon = new AttachedSprite('credits/' + creditsStuff[i][1], 'idle', null, true);
-						icon.xAdd = optionText.width + 10;
-						icon.yAdd = optionText.height - (icon.height / 4);
-						icon.sprTracker = optionText;
-					case 'pohsan':
+					case 'Ezio' | 'pohsan':
 						icon = new AttachedSprite('credits/' + creditsStuff[i][1], 'idle', null, true);
 						icon.xAdd = optionText.width + 10;
 						icon.yAdd = optionText.height - (icon.height / 4);
@@ -139,6 +140,21 @@ class CreditsState extends MusicBeatState
 						icon = new AttachedSprite('credits/' + creditsStuff[i][1]);
 						icon.xAdd = optionText.width + 10;
 						icon.sprTracker = optionText;
+				}
+
+				if(creditsStuff[i][0] == 'elfb34')
+				{
+					shit = new AttachedSprite('credits/shit', 'idle', null, true);
+					shit.xAdd = optionText.width + icon.width - 13;
+					shit.yAdd = icon.height - (icon.height / 2);
+					shit.sprTracker = optionText;
+					add(shit);
+
+					quelespasa = new AttachedSprite('credits/nosoyna', 'idle', null, true);
+					quelespasa.xAdd = optionText.width + icon.width + 15;
+					quelespasa.yAdd = 0;
+					quelespasa.sprTracker = optionText;
+					add(quelespasa);
 				}
 	
 				// using a FlxGroup is too much fuss!
@@ -151,6 +167,9 @@ class CreditsState extends MusicBeatState
 			else optionText.alignment = CENTERED;
 		}
 		
+		shit.alpha = 0;
+		quelespasa.alpha = 0;
+
 		descBox = new AttachedSprite();
 		descBox.makeGraphic(1, 1, FlxColor.BLACK);
 		descBox.xAdd = -10;
@@ -160,7 +179,7 @@ class CreditsState extends MusicBeatState
 		add(descBox);
 
 		descText = new FlxText(50, FlxG.height + offsetThing - 25, 1180, "", 32);
-		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER/*, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK*/);
+		descText.setFormat(Paths.font("ComicSansMS.ttf"), 32, FlxColor.WHITE, CENTER/*, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK*/);
 		descText.scrollFactor.set();
 		//descText.borderSize = 2.4;
 		descBox.sprTracker = descText;
@@ -233,6 +252,8 @@ class CreditsState extends MusicBeatState
 			{
 				FlxG.sound.music.pitch = 1;
 				
+				randomTween.cancel();
+
 				if(colorTween != null) {
 					colorTween.cancel();
 				}
@@ -274,12 +295,39 @@ class CreditsState extends MusicBeatState
 				curSelected = 0;
 		} while(unselectableCheck(curSelected));
 
+		if(randomTween != null) {
+			randomTween.cancel();
+		}
+
+		if (creditsStuff[curSelected][0] == 'elfb34')
+		{
+			//randomTween = FlxTween.tween(shit, {alpha: 1}, 0.25, {ease: FlxEase.quadInOut});
+			/*randomTween = FlxTween.tween(quelespasa, {alpha: 1}, 0.25, {
+				ease: FlxEase.quadInOut,
+				onComplete: function(twn:FlxTween) {
+					randomTween = null;
+				}
+			});*/
+		}
+		else
+		{
+			//randomTween = FlxTween.tween(shit, {alpha: 0}, 0.25, {ease: FlxEase.quadInOut});
+			/*randomTween = FlxTween.tween(quelespasa, {alpha: 0}, 0.25, {
+				ease: FlxEase.quadInOut,
+				onComplete: function(twn:FlxTween) {
+					randomTween = null;
+				}
+			});*/
+		}
+
 		var newColor:Int =  getCurrentBGColor();
 
 		if (creditsStuff[curSelected][0] != '...')
 		{
 			estatica.visible = false;
 			estatica.animation.stop();
+
+			descText.color = 0xFFFFFFFF;
 
 			FlxG.sound.music.pitch = 1;
 
@@ -299,6 +347,8 @@ class CreditsState extends MusicBeatState
 		{
 			estatica.visible = true;
 			estatica.animation.play('idle');
+
+			descText.color = 0xFFFF0000;
 
 			FlxG.sound.music.pitch = 0.1;
 			if(newColor != intendedColor) {

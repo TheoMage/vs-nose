@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="shit.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle de ohio0000" x="5" y="5" width="27" height="16"/>
+	<SubTexture name="idle de ohio0001" x="5" y="5" width="27" height="16"/>
+	<SubTexture name="idle de ohio0002" x="37" y="5" width="27" height="16"/>
+	<SubTexture name="idle de ohio0003" x="37" y="5" width="27" height="16"/>
+	<SubTexture name="idle de ohio0004" x="69" y="5" width="27" height="16"/>
+	<SubTexture name="idle de ohio0005" x="69" y="5" width="27" height="16"/>
+</TextureAtlas>

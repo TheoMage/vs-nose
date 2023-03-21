@@ -813,6 +813,7 @@ class TitleState extends MusicBeatState
 		}
 		
 		var video:MP4Handler = new MP4Handler();
+		video.hola = false;
 		video.playVideo(filepath);
 		video.finishCallback = function()
 		{

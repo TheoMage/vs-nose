@@ -3372,6 +3372,7 @@ class PlayState extends MusicBeatState
 
 	function opponentNoteHit(note:Note):Void
 	{
+		// everybody wanna be a superstar
 		if (Paths.formatToSongPath(SONG.song) != 'tutorial')
 			camZooming = true;
 
