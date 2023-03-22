@@ -41,8 +41,6 @@ class CreditsState extends MusicBeatState
 	var offsetThing:Float = -75;
 	var estatica:FlxSprite;
 
-	var randomTween:FlxTween;
-
 	var shit:AttachedSprite = null;
 	var quelespasa:AttachedSprite = null;
 
@@ -251,15 +249,13 @@ class CreditsState extends MusicBeatState
 			if (controls.BACK && !plantsvsohies)
 			{
 				FlxG.sound.music.pitch = 1;
-				
-				randomTween.cancel();
 
 				if(colorTween != null) {
 					colorTween.cancel();
 				}
 				FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new MainMenuState());
 				quitting = true;
+				MusicBeatState.switchState(new MainMenuState());
 			}
 		}
 		
@@ -294,31 +290,6 @@ class CreditsState extends MusicBeatState
 			if (curSelected >= creditsStuff.length)
 				curSelected = 0;
 		} while(unselectableCheck(curSelected));
-
-		if(randomTween != null) {
-			randomTween.cancel();
-		}
-
-		if (creditsStuff[curSelected][0] == 'elfb34')
-		{
-			//randomTween = FlxTween.tween(shit, {alpha: 1}, 0.25, {ease: FlxEase.quadInOut});
-			/*randomTween = FlxTween.tween(quelespasa, {alpha: 1}, 0.25, {
-				ease: FlxEase.quadInOut,
-				onComplete: function(twn:FlxTween) {
-					randomTween = null;
-				}
-			});*/
-		}
-		else
-		{
-			//randomTween = FlxTween.tween(shit, {alpha: 0}, 0.25, {ease: FlxEase.quadInOut});
-			/*randomTween = FlxTween.tween(quelespasa, {alpha: 0}, 0.25, {
-				ease: FlxEase.quadInOut,
-				onComplete: function(twn:FlxTween) {
-					randomTween = null;
-				}
-			});*/
-		}
 
 		var newColor:Int =  getCurrentBGColor();
 
