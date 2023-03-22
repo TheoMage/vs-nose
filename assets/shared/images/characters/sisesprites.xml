@@ -1,35 +1,207 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="siseassets.png">
+<TextureAtlas imagePath="sisesprites.png">
 	<!-- Created with Adobe Animate version 21.0.5.40714 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="sise down0000" x="0" y="0" width="385" height="593" pivotX="-29.95" pivotY="125.45" frameX="0" frameY="-9" frameWidth="385" frameHeight="602"/>
-	<SubTexture name="sise down0001" x="0" y="0" width="385" height="593" frameX="0" frameY="-9" frameWidth="385" frameHeight="602"/>
-	<SubTexture name="sise down0002" x="385" y="0" width="370" height="602" frameX="-8" frameY="0" frameWidth="385" frameHeight="602"/>
-	<SubTexture name="sise down0003" x="385" y="0" width="370" height="602" frameX="-8" frameY="0" frameWidth="385" frameHeight="602"/>
-	<SubTexture name="sise idle0000" x="755" y="0" width="380" height="590" pivotX="0.25" pivotY="-7.05" frameX="0" frameY="-26" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0001" x="755" y="0" width="380" height="590" frameX="0" frameY="-26" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0002" x="1135" y="0" width="387" height="589" frameX="0" frameY="-27" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0003" x="1135" y="0" width="387" height="589" frameX="0" frameY="-27" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0004" x="1522" y="0" width="391" height="604" frameX="-1" frameY="-12" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0005" x="1522" y="0" width="391" height="604" frameX="-1" frameY="-12" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0006" x="0" y="604" width="390" height="610" frameX="-5" frameY="-6" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0007" x="0" y="604" width="390" height="610" frameX="-5" frameY="-6" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0008" x="390" y="604" width="389" height="614" frameX="-6" frameY="-2" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0009" x="390" y="604" width="389" height="614" frameX="-6" frameY="-2" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0010" x="779" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0011" x="779" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0012" x="1169" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise idle0013" x="1169" y="604" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
-	<SubTexture name="sise left0000" x="1559" y="604" width="320" height="598" pivotX="4.15" pivotY="162.65"/>
-	<SubTexture name="sise left0001" x="1559" y="604" width="320" height="598"/>
-	<SubTexture name="sise left0002" x="0" y="1220" width="301" height="596" frameX="-19" frameY="-2" frameWidth="320" frameHeight="598"/>
-	<SubTexture name="sise left0003" x="0" y="1220" width="301" height="596" frameX="-19" frameY="-2" frameWidth="320" frameHeight="598"/>
-	<SubTexture name="sise right0000" x="301" y="1220" width="463" height="654" pivotX="-67.1" pivotY="131.75" frameX="-6" frameY="0" frameWidth="469" frameHeight="654"/>
-	<SubTexture name="sise right0001" x="301" y="1220" width="463" height="654" frameX="-6" frameY="0" frameWidth="469" frameHeight="654"/>
-	<SubTexture name="sise right0002" x="764" y="1220" width="457" height="649" frameX="0" frameY="-5" frameWidth="469" frameHeight="654"/>
-	<SubTexture name="sise right0003" x="764" y="1220" width="457" height="649" frameX="0" frameY="-5" frameWidth="469" frameHeight="654"/>
-	<SubTexture name="sise up0000" x="1221" y="1220" width="377" height="681" pivotX="-76.3" pivotY="272.25" frameX="-3" frameY="0" frameWidth="381" frameHeight="681"/>
-	<SubTexture name="sise up0001" x="1221" y="1220" width="377" height="681" frameX="-3" frameY="0" frameWidth="381" frameHeight="681"/>
-	<SubTexture name="sise up0002" x="1598" y="1220" width="381" height="662" frameX="0" frameY="-19" frameWidth="381" frameHeight="681"/>
-	<SubTexture name="sise up0003" x="1598" y="1220" width="381" height="662" frameX="0" frameY="-19" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="interpolacion0000" x="0" y="0" width="875" height="849" pivotX="-55.85" pivotY="184.1" frameX="0" frameY="-165" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0001" x="0" y="0" width="875" height="849" frameX="0" frameY="-165" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0002" x="875" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0003" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0004" x="2593" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0005" x="2593" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0006" x="3452" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0007" x="4311" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0008" x="5170" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0009" x="5170" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0010" x="6029" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0011" x="6029" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0012" x="5170" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0013" x="5170" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0014" x="6888" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0015" x="6888" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0016" x="0" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0017" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0018" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0019" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0020" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0021" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0022" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0023" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0024" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0025" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0026" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0027" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0028" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0029" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0030" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0031" x="1734" y="0" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0032" x="859" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0033" x="1718" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0034" x="2577" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0035" x="3436" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0036" x="4295" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0037" x="5154" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0038" x="6013" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0039" x="6872" y="858" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0040" x="0" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0041" x="859" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0042" x="1718" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0043" x="2577" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0044" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0045" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0046" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0047" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0048" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0049" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0050" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0051" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0052" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0053" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0054" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0055" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0056" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0057" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0058" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0059" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0060" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0061" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0062" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0063" x="4295" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0064" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0065" x="3436" y="1716" width="859" height="858" frameX="-8" frameY="-158" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0066" x="5154" y="1716" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0067" x="5719" y="1716" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0068" x="6284" y="1716" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0069" x="6849" y="1716" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0070" x="7414" y="1716" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0071" x="0" y="2574" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0072" x="565" y="2574" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0073" x="1130" y="2574" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0074" x="1695" y="2574" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0075" x="2260" y="2574" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="interpolacion0076" x="2825" y="2574" width="565" height="808" frameX="-177" frameY="0" frameWidth="875" frameHeight="1016"/>
+	<SubTexture name="sise down0000" x="3390" y="2574" width="385" height="593" pivotX="-29.95" pivotY="125.45" frameX="0" frameY="-9" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise down0001" x="3390" y="2574" width="385" height="593" frameX="0" frameY="-9" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise down0002" x="3775" y="2574" width="370" height="602" frameX="-8" frameY="0" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise down0003" x="3775" y="2574" width="370" height="602" frameX="-8" frameY="0" frameWidth="385" frameHeight="602"/>
+	<SubTexture name="sise idle0000" x="4145" y="2574" width="380" height="590" pivotX="0.25" pivotY="-7.05" frameX="0" frameY="-26" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0001" x="4145" y="2574" width="380" height="590" frameX="0" frameY="-26" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0002" x="4525" y="2574" width="387" height="589" frameX="0" frameY="-27" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0003" x="4525" y="2574" width="387" height="589" frameX="0" frameY="-27" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0004" x="4912" y="2574" width="391" height="604" frameX="-1" frameY="-12" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0005" x="4912" y="2574" width="391" height="604" frameX="-1" frameY="-12" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0006" x="5303" y="2574" width="390" height="610" frameX="-5" frameY="-6" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0007" x="5303" y="2574" width="390" height="610" frameX="-5" frameY="-6" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0008" x="5693" y="2574" width="389" height="614" frameX="-6" frameY="-2" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0009" x="5693" y="2574" width="389" height="614" frameX="-6" frameY="-2" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0010" x="6082" y="2574" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0011" x="6082" y="2574" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0012" x="6472" y="2574" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise idle0013" x="6472" y="2574" width="390" height="616" frameX="-6" frameY="0" frameWidth="396" frameHeight="616"/>
+	<SubTexture name="sise left0000" x="6862" y="2574" width="320" height="598" pivotX="4.15" pivotY="162.65"/>
+	<SubTexture name="sise left0001" x="6862" y="2574" width="320" height="598"/>
+	<SubTexture name="sise left0002" x="7182" y="2574" width="301" height="596" frameX="-19" frameY="-2" frameWidth="320" frameHeight="598"/>
+	<SubTexture name="sise left0003" x="7182" y="2574" width="301" height="596" frameX="-19" frameY="-2" frameWidth="320" frameHeight="598"/>
+	<SubTexture name="sise recomiendo0000" x="7483" y="2574" width="400" height="595" pivotX="226.3" pivotY="392.8" frameX="-236" frameY="-420" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0001" x="7483" y="2574" width="400" height="595" frameX="-236" frameY="-420" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0002" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0003" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0004" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0005" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0006" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0007" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0008" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0009" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0010" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0011" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0012" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0013" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0014" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0015" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0016" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0017" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0018" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0019" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0020" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0021" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0022" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0023" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0024" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0025" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0026" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0027" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0028" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0029" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0030" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0031" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0032" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0033" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0034" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0035" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0036" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0037" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0038" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0039" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0040" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0041" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0042" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0043" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0044" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0045" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0046" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0047" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0048" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0049" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0050" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0051" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0052" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0053" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0054" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0055" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0056" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0057" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0058" x="0" y="3382" width="425" height="570" frameX="-240" frameY="-445" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0059" x="425" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0060" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0061" x="845" y="3382" width="420" height="571" frameX="-239" frameY="-444" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0062" x="1265" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0063" x="1265" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0064" x="1924" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0065" x="2583" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0066" x="3242" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0067" x="3901" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0068" x="4560" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0069" x="5219" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0070" x="5878" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0071" x="6537" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0072" x="7196" y="3382" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0073" x="0" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0074" x="659" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0075" x="1318" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0076" x="1977" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0077" x="2636" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0078" x="3295" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0079" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0080" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0081" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0082" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0083" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0084" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0085" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0086" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0087" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0088" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0089" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0090" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0091" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0092" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0093" x="3954" y="4397" width="659" height="1015" frameX="0" frameY="0" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise recomiendo0094" x="4613" y="4397" width="426" height="828" frameX="-233" frameY="-187" frameWidth="665" frameHeight="1015"/>
+	<SubTexture name="sise right0000" x="5039" y="4397" width="463" height="654" pivotX="-67.1" pivotY="131.75" frameX="-6" frameY="0" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise right0001" x="5039" y="4397" width="463" height="654" frameX="-6" frameY="0" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise right0002" x="5502" y="4397" width="457" height="649" frameX="0" frameY="-5" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise right0003" x="5502" y="4397" width="457" height="649" frameX="0" frameY="-5" frameWidth="469" frameHeight="654"/>
+	<SubTexture name="sise up0000" x="5959" y="4397" width="377" height="681" pivotX="-76.3" pivotY="272.25" frameX="-3" frameY="0" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="sise up0001" x="5959" y="4397" width="377" height="681" frameX="-3" frameY="0" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="sise up0002" x="6336" y="4397" width="381" height="662" frameX="0" frameY="-19" frameWidth="381" frameHeight="681"/>
+	<SubTexture name="sise up0003" x="6336" y="4397" width="381" height="662" frameX="0" frameY="-19" frameWidth="381" frameHeight="681"/>
 </TextureAtlas>

@@ -1,59 +1,81 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-53,
 				-133
 			],
-			"loop": false,
-			"anim": "singLEFT",
 			"fps": 24,
-			"name": "sise left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "sise left"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-93,
 				-166
 			],
-			"loop": false,
-			"anim": "singDOWN",
 			"fps": 24,
-			"name": "sise down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "sise down"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-131,
 				-41
 			],
-			"loop": false,
-			"anim": "singUP",
 			"fps": 24,
-			"name": "sise up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "sise up"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-130,
 				-176
 			],
-			"loop": false,
-			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "sise right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "sise right"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-103,
 				-158
 			],
-			"loop": false,
-			"anim": "idle",
 			"fps": 24,
-			"name": "sise idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "sise idle"
+		},
+		{
+			"offsets": [
+				124,
+				240
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "recomiendo",
+			"loop": false,
+			"name": "sise recomiendo"
+		},
+		{
+			"offsets": [
+				170,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "interpolacion",
+			"loop": false,
+			"name": "interpolacion"
 		}
 	],
 	"no_antialiasing": false,
@@ -70,8 +92,8 @@
 		255
 	],
 	"camera_position": [
-		-220,
-		140
+		-420,
+		50
 	],
 	"sing_duration": 6.1,
 	"scale": 1
