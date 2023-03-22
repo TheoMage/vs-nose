@@ -17,3 +17,12 @@ function onUpdate()
         setHealth(0)
     end
 end
+
+function onEvent(n,v1,v2)
+    if n == 'Change Character' then
+        runHaxeCode([[
+                game.iconP1.changeIcon(game.dad.healthIcon);
+                game.iconP2.changeIcon(game.boyfriend.healthIcon);
+        ]])
+    end
+end
