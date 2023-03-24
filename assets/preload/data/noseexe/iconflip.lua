@@ -1,6 +1,6 @@
 function onCreatePost()
     runHaxeCode([[
-        game.iconP1.changeIcon(game.dad.curCharacter, true, true, 24);
+        game.iconP1.changeIcon(game.dad.curCharacter);
         game.iconP2.changeIcon(game.boyfriend.curCharacter);
     ]])
 
@@ -16,11 +16,4 @@ function onUpdate()
     if getHealth() >= 1.99 then
         setHealth(0)
     end
-end
-
-function onUpdatePost()
-    runHaxeCode([[
-        game.iconP1.changeIcon(game.dad.curCharacter, true, true, 24);
-        game.iconP2.changeIcon(game.boyfriend.curCharacter);
-    ]])
 end
