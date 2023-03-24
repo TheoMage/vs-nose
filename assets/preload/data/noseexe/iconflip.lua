@@ -18,11 +18,9 @@ function onUpdate()
     end
 end
 
-function onEvent(n,v1,v2)
-    if n == 'Change Character' then
-        runHaxeCode([[
-            game.iconP1.changeIcon(game.dad.curCharacter);
-            game.iconP2.changeIcon(game.boyfriend.curCharacter);
-        ]])
-    end
+function onUpdatePost()
+    runHaxeCode([[
+        game.iconP1.changeIcon(game.dad.curCharacter);
+        game.iconP2.changeIcon(game.boyfriend.curCharacter);
+    ]])
 end
