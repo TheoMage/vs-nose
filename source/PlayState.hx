@@ -1992,6 +1992,22 @@ class PlayState extends MusicBeatState
 			else
 				iconP1.animation.curAnim.curFrame = 0;
 		}
+		else
+		{
+			if (healthBar.percent < 20 && iconP1.animation.curAnim.name != 'losing')
+			{
+				trace('hola');
+				iconP1.playAnim('losing');
+				//iconP1.offset.set(0, 0);
+			}
+
+			if (healthBar.percent > 20 && iconP1.animation.curAnim.name != 'idle')
+			{
+				trace('hola');
+				iconP1.playAnim('idle');
+				//iconP1.offset.set(0, 450);
+			}
+		}
 
 		if (!iconP2.getAnim())
 		{
@@ -1999,6 +2015,18 @@ class PlayState extends MusicBeatState
 				iconP2.animation.curAnim.curFrame = 1;
 			else
 				iconP2.animation.curAnim.curFrame = 0;
+		}
+		else
+		{
+			if (healthBar.percent > 80 && iconP2.animation.curAnim.name != 'losing')
+			{
+				iconP2.playAnim('losing');
+			}
+
+			if (healthBar.percent < 80 && iconP2.animation.curAnim.name != 'idle')
+			{
+				iconP2.playAnim('idle');
+			}
 		}
 
 		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {

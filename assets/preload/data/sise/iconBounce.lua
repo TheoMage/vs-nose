@@ -39,7 +39,7 @@ function onUpdatePost(elapsed)
     setProperty('iconP2.x', getProperty('healthBar.x') + (getProperty('healthBar.width') * (remapToRange(getProperty('healthBar.percent'), 0, 100, 100, 0) * 0.01)) - (150 * getProperty('scaleP2.scale.x')) / 2 - iconOffset * 2)
 
     if getProperty('healthBar.percent') < 20 then
-        setProperty('scaleP1.angle', getRandomFloat(5, -5))
+        --setProperty('scaleP1.angle', getRandomFloat(5, -5))
     end
 
     if getProperty('healthBar.percent') > 80 then
@@ -56,7 +56,7 @@ function onStepHit()
 
     angle = 10
 
-    if getProperty('healthBar.percent') > 20 then
+    --if getProperty('healthBar.percent') > 20 then
         if curStep % 8 == 0 then
             setProperty('scaleP1.angle', angle)
             setProperty('scaleP1.scale.x', 1.2)
@@ -66,17 +66,17 @@ function onStepHit()
             setProperty('scaleP1.scale.x', 0.8)
             setProperty('scaleP1.scale.y', 1.2)
         end
-    else
-        if curStep % 2 == 0 then
+    --end
+        --if curStep % 2 == 0 then
             --setProperty('scaleP1.angle', angle)
-            setProperty('scaleP1.scale.x', 1.2)
-            setProperty('scaleP1.scale.y', 0.8)
-        elseif curStep % 2 == 1 then
+            --setProperty('scaleP1.scale.x', 1.2)
+            --setProperty('scaleP1.scale.y', 0.8)
+        --elseif curStep % 2 == 1 then
             --setProperty('scaleP1.angle', -angle)
-            setProperty('scaleP1.scale.x', 0.8)
-            setProperty('scaleP1.scale.y', 1.2)
-        end
-    end
+            --setProperty('scaleP1.scale.x', 0.8)
+            --setProperty('scaleP1.scale.y', 1.2)
+       --end
+    --end
 
     if getProperty('healthBar.percent') < 80 then
         if curStep % 8 == 0 then

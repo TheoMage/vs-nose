@@ -15,7 +15,9 @@ class HealthIcon extends FlxSprite
 	private var char:String = '';
 	private var p_anim:Bool = false;
 
-	public function new(char:String = 'bf', isPlayer:Bool = false, anim:Bool = false, framerate:Int = 24)
+	private var hahaha:Int = 24;
+
+	public function new(char:String = 'bf', isPlayer:Bool = false, Anim:Bool = false, fps:Int = 24)
 	{
 		#if (haxe >= "4.0.0")
 		animOffsets = new Map();
@@ -26,7 +28,8 @@ class HealthIcon extends FlxSprite
 		super();
 		isOldIcon = (char == 'bf-old');
 		this.isPlayer = isPlayer;
-		changeIcon(char, anim, framerate);
+		hahaha = fps;
+		changeIcon(char, Anim, hahaha);
 		scrollFactor.set();
 	}
 
@@ -44,16 +47,17 @@ class HealthIcon extends FlxSprite
 	}
 
 	private var iconOffsets:Array<Float> = [0, 0];
-	public function changeIcon(char:String, anim:Bool = false, framerate:Int = 24) {
+	public function changeIcon(char:String, Anim:Bool = false, fps:Int = 24) {
 		if(this.char != char) {
 			var name:String = 'icons/' + char;
 			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char; //Older versions of psych engine's support
 			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-face'; //Prevents crash from missing icon
 			var file:Dynamic = Paths.image(name);
+			//hahahaha = fps;
 
-			p_anim = anim;
+			p_anim = Anim;
 
-			if (!anim)
+			if (!Anim)
 			{
 				loadGraphic(file); //Load stupidly first for getting the file size
 				loadGraphic(file, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr
@@ -62,16 +66,22 @@ class HealthIcon extends FlxSprite
 				updateHitbox();
 	
 				animation.add(char, [0, 1], 0, false, isPlayer);
+
+				animation.play(char);
 			}
 			else
 			{
 				frames = Paths.getSparrowAtlas(name); //Load stupidly first for getting the file size
 				updateHitbox();
 	
-				animation.addByPrefix(char, 'idle', framerate, true, isPlayer);
+				animation.addByPrefix('idle', 'idle', 24, true, isPlayer);
+				animation.addByPrefix('losing', 'losing', 24, true, isPlayer);
+
+				trace(fps);
+
+				playAnim('idle');
 			}
 
-			animation.play(char);
 			this.char = char;
 
 			antialiasing = ClientPrefs.globalAntialiasing;
@@ -81,7 +91,7 @@ class HealthIcon extends FlxSprite
 		}
 	}
 
-	public function playAnim(name, forced, reverse, startFrame) {
+	public function playAnim(name:String, forced:Bool = false, reverse:Bool = false, startFrame:Int = 0) {
 		var daOffset = animOffsets.get(name);
 		if (animOffsets.exists(name))
 		{

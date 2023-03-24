@@ -1873,10 +1873,10 @@ class FunkinLua {
 		Lua_helper.add_callback(lua, "addIconOffset", function(icon:String, anim:String, x:Float, y:Float) {
 			switch(icon.toLowerCase())
 			{
-				case 'iconp1' | 'p1' | 'bf':
+				case 'iconp1':
 					PlayState.instance.iconP1.addOffset(anim, x, y);
 					return true;
-				case 'iconp2' | 'p2' | 'dad':
+				case 'iconp2':
 					PlayState.instance.iconP2.addOffset(anim, x, y);
 					return true;
 			}

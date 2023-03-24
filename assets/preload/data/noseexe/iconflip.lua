@@ -1,7 +1,7 @@
 function onCreatePost()
     runHaxeCode([[
-        game.iconP1.changeIcon(game.dad.healthIcon);
-        game.iconP2.changeIcon(game.boyfriend.healthIcon);
+        game.iconP1.changeIcon(game.dad.curCharacter, true, true, 24);
+        game.iconP2.changeIcon(game.boyfriend.curCharacter);
     ]])
 
     setProperty('healthGain', -1)
@@ -18,11 +18,9 @@ function onUpdate()
     end
 end
 
-function onEvent(n,v1,v2)
-    if n == 'Change Character' then
-        runHaxeCode([[
-                game.iconP1.changeIcon(game.dad.healthIcon);
-                game.iconP2.changeIcon(game.boyfriend.healthIcon);
-        ]])
-    end
+function onUpdatePost()
+    runHaxeCode([[
+        game.iconP1.changeIcon(game.dad.curCharacter, true, true, 24);
+        game.iconP2.changeIcon(game.boyfriend.curCharacter);
+    ]])
 end
