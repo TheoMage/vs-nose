@@ -2830,7 +2830,6 @@ class PlayState extends MusicBeatState
 				}
 
 				if(FlxG.save.data.exeUnlocked == true)
-					
 					if(SONG.song == 'nose.exe')
 						MusicBeatState.switchState(new BsidesState());
 					else
