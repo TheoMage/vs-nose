@@ -231,7 +231,7 @@ class TitleState extends MusicBeatState
 	}
 
 	var logoBl:FlxSprite;
-	var gfDance:FlxSprite;
+	//var gfDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	//var swagShader:ProShader = null;
@@ -276,7 +276,7 @@ class TitleState extends MusicBeatState
 		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
 			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
 		}else{
-			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+			bg.makeGraphic(FlxG.width, FlxG.height, 0xFFFFF7FF);
 		}
 
 		// bg.antialiasing = ClientPrefs.globalAntialiasing;
@@ -284,23 +284,21 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);
 
-		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
-		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
-
+		logoBl = new FlxSprite().loadGraphic(Paths.image('hola'));
+		logoBl.setGraphicSize(0, 720);
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
-		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
-		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
+		logoBl.screenCenter();
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
 		//swagShader = new ProShader();
-		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
+		//gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
 
 		var easterEgg:String = FlxG.save.data.psychDevsEasterEgg;
 		if(easterEgg == null) easterEgg = ''; //html5 fix
 
-		switch(easterEgg.toUpperCase())
+		/*switch(easterEgg.toUpperCase())
 		{
 			#if TITLE_SCREEN_EASTER_EGG
 			case 'SHADOW':
@@ -328,13 +326,13 @@ class TitleState extends MusicBeatState
 				gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
 				gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 				gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-		}
-		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
+		}*/
+		//gfDance.antialiasing = ClientPrefs.globalAntialiasing;
 
 		/*var hola:Array<BitmapFilter> = [new ShaderFilter(swagShader.shader)];
 		FlxG.camera.setFilters(hola);*/
 
-		add(gfDance);
+		//add(gfDance);
 		add(logoBl);
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
@@ -622,16 +620,16 @@ class TitleState extends MusicBeatState
 	{
 		super.beatHit();
 
-		if(logoBl != null)
-			logoBl.animation.play('bump', true);
+		/*if(logoBl != null)
+			logoBl.animation.play('bump', true);*/
 
-		if(gfDance != null) {
+		/*if(gfDance != null) {
 			danceLeft = !danceLeft;
 			if (danceLeft)
 				gfDance.animation.play('danceRight');
 			else
 				gfDance.animation.play('danceLeft');
-		}
+		}*/
 
 		if(!closedState) {
 			sickBeats++;

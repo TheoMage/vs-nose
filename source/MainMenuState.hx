@@ -126,6 +126,27 @@ class MainMenuState extends MusicBeatState
 			menuItem.updateHitbox();
 		}
 
+		var bside:FlxSprite = new FlxSprite(0, 103);
+		bside.frames = Paths.getSparrowAtlas('mainmenu/bside');
+		bside.animation.addByPrefix('idle', "idle", 24);
+		if (ClientPrefs.bSides)
+		{
+			bside.alpha = 1;
+			bside.animation.play('idle');
+		}
+		else
+		{
+			bside.alpha = 0;
+			if (bside.animation.curAnim != null)
+				bside.animation.stop();
+		}
+		bside.screenCenter(X);
+		add(bside);
+
+		bside.scrollFactor.set();
+		bside.antialiasing = ClientPrefs.globalAntialiasing;
+		bside.updateHitbox();
+
 		FlxG.camera.follow(camFollowPos, null, 1);
 
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "nose", 12);
