@@ -1,7 +1,7 @@
 function onCreatePost()
     runHaxeCode([[
-        game.iconP1.changeIcon(game.dad.curCharacter);
-        game.iconP2.changeIcon(game.boyfriend.curCharacter);
+        game.iconP1.changeIcon(game.dad.healthIcon);
+        game.iconP2.changeIcon(game.boyfriend.healthIcon);
     ]])
 
     setProperty('healthGain', -1)
@@ -20,7 +20,7 @@ end
 
 function onUpdatePost()
     runHaxeCode([[
-        game.iconP1.changeIcon(game.dad.curCharacter);
-        game.iconP2.changeIcon(game.boyfriend.curCharacter);
+        game.iconP1.changeIcon(game.dad.healthIcon);
+        game.iconP2.changeIcon(game.boyfriend.healthIcon);
     ]])
 end
